@@ -1,5 +1,11 @@
-import { CharacterAlignmentResponseModel } from "@elevenlabs/elevenlabs-js/api";
 import { z } from "zod";
+
+/** Alignment shape (Eleven v3 Timing via WaveSpeed / legacy ElevenLabs). */
+export type CharacterAlignmentResponseModel = {
+  characters: string[];
+  characterStartTimesSeconds: number[];
+  characterEndTimesSeconds: number[];
+};
 
 const BackgroundTransitionTypeSchema = z.union([
   z.literal("fade"),

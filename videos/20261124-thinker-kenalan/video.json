@@ -1,0 +1,254 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "20261124-thinker-kenalan",
+  "version": 1,
+  "title": "Kenalan sama Thinker",
+  "language": "id",
+  "targetDuration": 30,
+  "beats": [
+    {
+      "id": "b01",
+      "text": "Halo! Aku Thinker.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "cheer",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    },
+    {
+      "id": "b02",
+      "text": "Aku robot kecil dari bintangku.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "wave",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    },
+    {
+      "id": "b03",
+      "text": "Aku suka belajar dan bermain.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "cheer",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    },
+    {
+      "id": "b04",
+      "text": "Yuk kenalan lebih dekat.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "wave",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    },
+    {
+      "id": "b05",
+      "text": "Setiap hari ada petualangan baru.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "cheer",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    },
+    {
+      "id": "b06",
+      "text": "Bintang-bintang menemaniku.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "wave",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    },
+    {
+      "id": "b07",
+      "text": "Ayo kita mulai bersama.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "cheer",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    },
+    {
+      "id": "b08",
+      "text": "Belajar itu menyenangkan sekali.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "wave",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    },
+    {
+      "id": "b09",
+      "text": "Kamu siap? Aku siap!",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "cheer",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    },
+    {
+      "id": "b10",
+      "text": "Sampai jumpa di video berikutnya.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "wave",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    },
+    {
+      "id": "b11",
+      "text": "Terima kasih sudah menonton.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "cheer",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": []
+        }
+      ]
+    }
+  ],
+  "captions": {
+    "enabled": true
+  },
+  "status": "preview_ready",
+  "history": [
+    {
+      "from": "draft",
+      "to": "draft",
+      "at": "2026-11-24T15:20:33.392Z",
+      "by": "cli:new"
+    },
+    {
+      "from": "draft",
+      "to": "vo_ready",
+      "at": "2026-11-24T15:22:02.753Z",
+      "by": "cli:vo"
+    },
+    {
+      "from": "vo_ready",
+      "to": "preview_ready",
+      "at": "2026-11-24T15:22:10.569Z",
+      "by": "cli:qa"
+    }
+  ]
+}

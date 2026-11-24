@@ -1,0 +1,49 @@
+{
+  "tts": {
+    "model": "elevenlabs/eleven-v3/timing",
+    "enabled": true
+  },
+  "align": {
+    "fallback": [
+      "elevenlabs/scribe-v2",
+      "wavespeed-ai/openai-whisper"
+    ],
+    "enabled": true
+  },
+  "llm": {
+    "baseUrl": "https://llm.wavespeed.ai/v1",
+    "model": "wavespeed-ai/deepseek-v4.1-flash",
+    "fallbackModel": "openai/gpt-6-luna",
+    "enabled": true
+  },
+  "story": {
+    "model": "wavespeed-ai/ai-story-generator",
+    "enabled": true
+  },
+  "moderateVideo": {
+    "model": "wavespeed-ai/molmo2/video-content-moderator",
+    "enabled": false
+  },
+  "moderateText": {
+    "model": "wavespeed-ai/molmo2/text-content-moderator",
+    "enabled": false
+  },
+  "svg": {
+    "model": "recraft-ai/recraft-20b-svg",
+    "enabled": false
+  },
+  "i2v": {
+    "model": "bytedance/seedance-2.5-flash/image-to-video",
+    "enabled": false,
+    "_notes": "OQ-11 dikunci: no i2v — full SVG"
+  },
+  "sing": {
+    "model": "wavespeed-ai/ace-step-1.5",
+    "enabled": true,
+    "_notes": "Jingle opsional (OQ-32); suara sama VO voice_id"
+  },
+  "vocalIsolate": {
+    "model": "wavespeed-ai/audio-vocal-isolator",
+    "enabled": true
+  }
+}

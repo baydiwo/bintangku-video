@@ -1,0 +1,17 @@
+{
+  "provider": "wavespeed",
+  "model": "elevenlabs/eleven-v3/timing",
+  "voice_id": "d15jrIAARvF899pDoC6T",
+  "settings": {
+    "stability": 0.5
+  },
+  "returns_alignment": true,
+  "locked": true,
+  "jingle": {
+    "sameVoiceAsVo": true,
+    "model": "wavespeed-ai/ace-step-1.5",
+    "vocalIsolate": "wavespeed-ai/audio-vocal-isolator",
+    "maxSungBeats": 1
+  },
+  "_notes": "voice_id dikunci user (ElevenLabs voice ID via WaveSpeed). Jingle: suara sama VO (OQ-32). Cadangan ElevenLabs API langsung hanya jika WaveSpeed jelek (OQ-25)."
+}

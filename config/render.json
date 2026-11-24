@@ -1,0 +1,12 @@
+{
+  "fps": 30,
+  "slotFrames": 81,
+  "width": 1080,
+  "height": 1920,
+  "codec": "h264",
+  "openglRenderer": "angle",
+  "draft": {
+    "scale": 0.5,
+    "watermark": "DRAFT"
+  }
+}

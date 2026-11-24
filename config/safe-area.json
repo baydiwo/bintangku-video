@@ -1,0 +1,13 @@
+{
+  "top": 269,
+  "bottom": 672,
+  "left": 65,
+  "right": 65,
+  "unit": "px",
+  "frameWidth": 1080,
+  "frameHeight": 1920,
+  "percent": { "top": 14, "bottom": 35, "side": 6 },
+  "source": "Meta Instagram/Facebook Reels ads guide (consider leaving 14% top, 35% bottom, 6% each side free). Conservative for organic Reels.",
+  "sourceUrl": "https://www.facebook.com/business/ads-guide/update/image/facebook-facebook-reels",
+  "checkedAt": "2026-11-24"
+}

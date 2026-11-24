@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bintangku.app/schemas/timeline.schema.json",
+  "title": "BintangkuTimeline",
+  "type": "object",
+  "required": ["meta", "slots", "elements", "text", "audio", "mouthTracks", "approvalHash"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["videoId", "version", "fps", "slotFrames", "totalSlots", "durationInFrames"],
+      "properties": {
+        "videoId": { "type": "string" },
+        "version": { "type": "integer" },
+        "fps": { "const": 30 },
+        "slotFrames": { "const": 81 },
+        "totalSlots": { "type": "integer", "minimum": 11, "maximum": 22 },
+        "durationInFrames": { "type": "integer" },
+        "width": { "type": "integer" },
+        "height": { "type": "integer" },
+        "generatedAt": { "type": "string" },
+        "generator": { "type": "string" },
+        "rigVersion": { "type": "string" },
+        "remotionVersion": { "type": "string" }
+      }
+    },
+    "slots": { "type": "array" },
+    "elements": { "type": "array" },
+    "text": { "type": "array" },
+    "audio": { "type": "array" },
+    "mouthTracks": { "type": "array" },
+    "approvalHash": { "type": "string", "minLength": 64, "maxLength": 64 }
+  }
+}

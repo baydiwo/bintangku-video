@@ -1,0 +1,6 @@
+{
+  "version": "0.1.0",
+  "poses": ["idle", "wave", "think", "cheer", "point", "calm"],
+  "transforms": {},
+  "_notes": "Salman MVP guest (OQ-17). Transform diisi setelah master SVG (TASK-USR-001)."
+}

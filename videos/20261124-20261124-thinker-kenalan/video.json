@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "20261124-20261124-thinker-kenalan",
+  "version": 1,
+  "title": "20261124 thinker kenalan",
+  "language": "id",
+  "targetDuration": 30,
+  "beats": [
+    {
+      "id": "b01",
+      "text": "Halo! Aku Thinker.",
+      "minSlots": 1,
+      "shots": [
+        {
+          "character": {
+            "pose": "wave",
+            "expression": "happy",
+            "x": 0.5,
+            "y": 0.62
+          },
+          "background": {
+            "type": "cosmic-flat",
+            "palette": "navy"
+          },
+          "ornaments": [
+            {
+              "type": "star",
+              "color": "brand.starYellow",
+              "x": 0.2,
+              "y": 0.2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "captions": {
+    "enabled": true
+  },
+  "status": "draft",
+  "history": [
+    {
+      "from": "draft",
+      "to": "draft",
+      "at": "2026-11-24T15:23:52.615Z",
+      "by": "cli:new"
+    }
+  ]
+}

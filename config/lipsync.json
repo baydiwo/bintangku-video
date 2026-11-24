@@ -1,0 +1,8 @@
+{
+  "T1": null,
+  "T2": null,
+  "minHoldFrames": 2,
+  "padStartFrames": 6,
+  "padEndFrames": 6,
+  "_notes": "T1/T2 ditetapkan saat uji R2 (ASM-15). minHoldFrames = ASM-13. pad = ASM-12."
+}

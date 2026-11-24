@@ -1,0 +1,58 @@
+{
+  "perVideoUsd": null,
+  "perMonthUsd": null,
+  "minBalanceUsd": 1,
+  "rates": [
+    {
+      "model": "elevenlabs/eleven-v3/timing",
+      "unit": "per_1000_chars",
+      "priceUsd": 0.2,
+      "sourceUrl": "https://wavespeed.ai/models/elevenlabs/eleven-v3/timing",
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "model": "minimax/speech-2.8-hd",
+      "unit": "per_1000_chars",
+      "priceUsd": 0.1,
+      "sourceUrl": "https://wavespeed.ai/models/minimax/speech-2.8-hd",
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "model": "wavespeed-ai/deepseek-v4.1-flash",
+      "unit": "per_1m_tokens_blended",
+      "priceUsd": 0.2,
+      "sourceUrl": "https://wavespeed.ai/models/wavespeed-ai/deepseek-v4.1-flash",
+      "checkedAt": "2026-11-24",
+      "_notes": "Perkiraan blended; cek harga aktual WaveSpeed LLM"
+    },
+    {
+      "model": "wavespeed-ai/ace-step-1.5",
+      "unit": "per_second",
+      "priceUsd": 0.0003,
+      "sourceUrl": "https://wavespeed.ai/models/wavespeed-ai/ace-step-1.5",
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "model": "wavespeed-ai/audio-vocal-isolator",
+      "unit": "per_second",
+      "priceUsd": 0.001,
+      "sourceUrl": "https://wavespeed.ai/models/wavespeed-ai/audio-vocal-isolator",
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "model": "wavespeed-ai/molmo2/video-content-moderator",
+      "unit": "per_video",
+      "priceUsd": 0.003,
+      "sourceUrl": "https://wavespeed.ai/models/wavespeed-ai/molmo2/video-content-moderator",
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "model": "recraft-ai/recraft-20b-svg",
+      "unit": "per_svg",
+      "priceUsd": 0.044,
+      "sourceUrl": "https://wavespeed.ai/models/recraft-ai/recraft-20b-svg",
+      "checkedAt": "2026-11-24"
+    }
+  ],
+  "_notes": "Batas perVideoUsd / perMonthUsd null = tanpa batas (OQ-08). Tarif bisa berubah — cek ulang halaman model."
+}

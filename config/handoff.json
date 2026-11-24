@@ -1,0 +1,8 @@
+{
+  "provider": "gdrive",
+  "folderId": null,
+  "folderName": "Bintangku Video Studio – Handoff",
+  "createdByApp": false,
+  "scope": "drive.file",
+  "_notes": "folderId diisi setelah `drive-auth` (OQ-33). Token OAuth tidak disimpan di sini."
+}

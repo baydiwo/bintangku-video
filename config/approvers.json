@@ -1,0 +1,4 @@
+{
+  "approvers": [],
+  "_notes": "Isi identitas git committer yang boleh menjalankan `approve` (email/name). Proteksi branch GitHub direkomendasikan (OQ-18)."
+}

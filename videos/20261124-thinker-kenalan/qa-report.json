@@ -1,0 +1,27 @@
+{
+  "videoId": "20261124-thinker-kenalan",
+  "at": "2026-11-24T15:22:10.567Z",
+  "checks": [
+    {
+      "id": "grid",
+      "ok": true,
+      "detail": "all cuts on 81-frame boundaries"
+    },
+    {
+      "id": "duration_slots",
+      "ok": true,
+      "detail": "15 slots (valid 11–22)"
+    },
+    {
+      "id": "hash",
+      "ok": true,
+      "detail": "approvalHash present"
+    },
+    {
+      "id": "vo_tracks",
+      "ok": true,
+      "detail": "VO audio tracks present"
+    }
+  ],
+  "passed": true
+}

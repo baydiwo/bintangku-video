@@ -1,300 +1,205 @@
 #!/usr/bin/env node
-
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
-import prompts from "prompts";
-import ora from "ora";
-import chalk from "chalk";
-import * as dotenv from "dotenv";
-import {
-  generateAiImage,
-  generateVoice,
-  getGenerateImageDescriptionPrompt,
-  getGenerateStoryPrompt,
-  openaiStructuredCompletion,
-  setApiKey,
-} from "./service";
-import {
-  ContentItemWithDetails,
-  StoryMetadataWithDetails,
-  StoryScript,
-  StoryWithImages,
-  Timeline,
-} from "../src/lib/types";
-import { v4 as uuidv4 } from "uuid";
-import * as fs from "fs";
-import * as path from "path";
-import { createTimeLineFromStoryWithDetails } from "./timeline";
+import { loadEnv } from "./lib/env";
+import { CliError } from "./providers/wavespeed/types";
+import * as log from "./lib/log";
+import { cmdNew } from "./commands/new";
+import { cmdValidate } from "./commands/validate";
+import { cmdVo } from "./commands/vo";
+import { cmdTimeline } from "./commands/timeline";
+import { cmdQa } from "./commands/qa";
+import { cmdReview } from "./commands/review";
+import { cmdApprove } from "./commands/approve";
+import { cmdRequestChanges } from "./commands/request-changes";
+import { cmdDraft, cmdRender } from "./commands/render";
+import { cmdGen } from "./commands/gen";
+import { cmdStory } from "./commands/story";
+import { cmdBalance } from "./commands/balance";
+import { cmdHandoff } from "./commands/handoff";
 
-dotenv.config({ quiet: true });
+loadEnv();
 
-interface GenerateOptions {
-  apiKey?: string;
-  elevenlabsApiKey?: string;
-  title?: string;
-  topic?: string;
-}
-
-class ContentFS {
-  title: string;
-  slug: string;
-
-  constructor(title: string) {
-    this.title = title;
-    this.slug = this.getSlug();
-  }
-
-  saveDescriptor(descriptor: StoryMetadataWithDetails) {
-    const dirPath = this.getDir();
-    const filePath = path.join(dirPath, "descriptor.json");
-    fs.writeFileSync(filePath, JSON.stringify(descriptor, null, 2));
-  }
-
-  saveTimeline(timeline: Timeline) {
-    const dirPath = this.getDir();
-    const filePath = path.join(dirPath, "timeline.json");
-    fs.writeFileSync(filePath, JSON.stringify(timeline, null, 2));
-  }
-
-  getDir(dir?: string): string {
-    const segments = ["public", "content", this.slug];
-    if (dir) {
-      segments.push(dir);
-    }
-    const p = path.join(process.cwd(), ...segments);
-    fs.mkdirSync(p, { recursive: true });
-    return p;
-  }
-
-  getImagePath(uid: string): string {
-    const dirPath = this.getDir("images");
-    return path.join(dirPath, `${uid}.png`);
-  }
-
-  getAudioPath(uid: string): string {
-    const dirPath = this.getDir("audio");
-    return path.join(dirPath, `${uid}.mp3`);
-  }
-
-  getSlug(): string {
-    return this.title
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-+|-+$/g, "");
-  }
-}
-
-async function generateStory(options: GenerateOptions) {
+async function run(fn: () => Promise<void>) {
   try {
-    let apiKey = options.apiKey || process.env.OPENAI_API_KEY;
-    let elevenlabsApiKey =
-      options.elevenlabsApiKey || process.env.ELEVENLABS_API_KEY;
-
-    if (!apiKey) {
-      const response = await prompts({
-        type: "password",
-        name: "apiKey",
-        message: "Enter your OpenAI API key:",
-        validate: (value) => value.length > 0 || "API key is required",
-      });
-
-      if (!response.apiKey) {
-        console.log(chalk.red("API key is required. Exiting..."));
-        process.exit(1);
-      }
-
-      apiKey = response.apiKey;
+    await fn();
+  } catch (err) {
+    if (err instanceof CliError) {
+      log.fail(err.message);
+      process.exit(1);
     }
-
-    if (!elevenlabsApiKey) {
-      const response = await prompts({
-        type: "password",
-        name: "elevenlabsApiKey",
-        message: "Enter your ElevenLabs API key:",
-        validate: (value) =>
-          value.length > 0 || "ElevenLabs API key is required",
-      });
-
-      if (!response.elevenlabsApiKey) {
-        console.log(chalk.red("API key is required. Exiting..."));
-        process.exit(1);
-      }
-
-      elevenlabsApiKey = response.elevenlabsApiKey;
-    }
-
-    let { title, topic } = options;
-
-    if (!title || !topic) {
-      const response = await prompts([
-        {
-          type: "text",
-          name: "title",
-          message: "Title of the story:",
-          initial: title,
-          validate: (value) => value.length > 0 || "Title is required",
-        },
-        {
-          type: "text",
-          name: "topic",
-          message: "Topic of the story:",
-          initial: topic,
-          validate: (value) => value.length > 0 || "Topic is required",
-        },
-      ]);
-
-      if (!response.title || !response.topic) {
-        console.log(chalk.red("Title and topic are required. Exiting..."));
-        process.exit(1);
-      }
-
-      title = response.title;
-      topic = response.topic;
-    }
-
-    console.log(chalk.blue(`\n📖 Creating story: "${title}"`));
-    console.log(chalk.blue(`📝 Topic: ${topic}\n`));
-
-    const storyWithDetails: StoryMetadataWithDetails = {
-      shortTitle: title!,
-      content: [],
-    };
-
-    const storySpinner = ora("Generating story...").start();
-    setApiKey(apiKey!);
-    const storyRes = await openaiStructuredCompletion(
-      getGenerateStoryPrompt(title!, topic!),
-      StoryScript,
-    );
-    storySpinner.succeed(chalk.green("Story generated!"));
-
-    const descriptionsSpinner = ora("Generating image descriptions...").start();
-    const storyWithImagesRes = await openaiStructuredCompletion(
-      getGenerateImageDescriptionPrompt(storyRes.text),
-      StoryWithImages,
-    );
-    descriptionsSpinner.succeed(chalk.green("Image descriptions generated!"));
-
-    for (const item of storyWithImagesRes.result) {
-      const contentWithDetails: ContentItemWithDetails = {
-        text: item.text,
-        imageDescription: item.imageDescription,
-        uid: uuidv4(),
-        audioTimestamps: {
-          characters: [],
-          characterStartTimesSeconds: [],
-          characterEndTimesSeconds: [],
-        },
-      };
-
-      storyWithDetails.content.push(contentWithDetails);
-    }
-
-    const contentFs = new ContentFS(title!);
-    contentFs.saveDescriptor(storyWithDetails);
-
-    const imagesSpinner = ora("Generating images and voice...").start();
-    for (let i = 0; i < storyWithDetails.content.length; i++) {
-      const storyItem = storyWithDetails.content[i];
-      imagesSpinner.text = `[${i * 2 + 1}/${storyWithDetails.content.length * 2}] Generating image for ${storyItem.text}`;
-      await generateAiImage({
-        prompt: storyItem.imageDescription,
-        path: contentFs.getImagePath(storyItem.uid),
-        onRetry: (attempt) => {
-          imagesSpinner.text = `[${i * 2 + 1}/${storyWithDetails.content.length * 2}] Generating image for ${storyItem.text} (retry ${attempt + 1})`;
-        },
-      });
-      imagesSpinner.text = `[${i * 2 + 2}/${storyWithDetails.content.length * 2}] Generating voice for ${storyItem.text}`;
-      const timings = await generateVoice(
-        storyItem.text,
-        elevenlabsApiKey!,
-        contentFs.getAudioPath(storyItem.uid),
-      );
-      storyItem.audioTimestamps = timings;
-    }
-    contentFs.saveDescriptor(storyWithDetails);
-    imagesSpinner.succeed(chalk.green("Images generated!"));
-
-    const finalSpinner = ora("Generating final result...").start();
-    const timeline = createTimeLineFromStoryWithDetails(storyWithDetails);
-    contentFs.saveTimeline(timeline);
-    finalSpinner.succeed(chalk.green("Final result generated!"));
-
-    console.log(chalk.green.bold("\n✨ Story generation complete!\n"));
-    console.log("Run " + chalk.blue("npm run dev") + " to preview the story");
-
-    return {};
-  } catch (error) {
-    console.error(chalk.red("\n❌ Error:"), error);
+    log.fail(err instanceof Error ? err.message : String(err));
     process.exit(1);
   }
 }
 
 yargs(hideBin(process.argv))
+  .scriptName("studio")
   .command(
-    "generate",
-    "Generate story timeline for given title and topic",
-    (yargs) => {
-      return yargs
-        .option("api-key", {
-          alias: "k",
-          type: "string",
-          description: "OpenAI API key",
-        })
-        .option("title", {
-          alias: "t",
-          type: "string",
-          description: "Title of the story",
-        })
-        .option("topic", {
-          alias: "p",
-          type: "string",
-          description:
-            "Topic of the story (e.g. Interesting Facts, History, etc.)",
-        });
-    },
-    async (argv) => {
-      await generateStory({
-        apiKey: argv["api-key"],
-        title: argv.title,
-        topic: argv.topic,
-      });
-    },
+    "new",
+    "Create videos/<YYYYMMDD-slug>/video.json",
+    (y) =>
+      y
+        .option("slug", { type: "string", demandOption: true })
+        .option("date", { type: "string", describe: "YYYYMMDD" })
+        .option("title", { type: "string" })
+        .option("duration", {
+          type: "number",
+          choices: [30, 60],
+          default: 30,
+        }),
+    (argv) =>
+      run(() =>
+        cmdNew({
+          slug: argv.slug,
+          date: argv.date,
+          title: argv.title,
+          targetDuration: argv.duration as 30 | 60,
+        }),
+      ),
   )
   .command(
-    "$0",
-    "Generate a story (default command)",
-    (yargs) => {
-      return yargs
-        .option("api-key", {
-          alias: "k",
-          type: "string",
-          description: "OpenAI API key",
-        })
-        .option("title", {
-          alias: "t",
-          type: "string",
-          description: "Title of the story",
-        })
-        .option("topic", {
-          alias: "p",
-          type: "string",
-          description:
-            "Topic of the story (e.g. Interesting Facts, History, etc.)",
-        });
-    },
-    async (argv) => {
-      await generateStory({
-        apiKey: argv["api-key"],
-        title: argv.title,
-        topic: argv.topic,
-      });
-    },
+    "validate <videoId>",
+    "Validate video.json schema",
+    (y) => y.positional("videoId", { type: "string", demandOption: true }),
+    (argv) => run(() => cmdValidate(String(argv.videoId))),
   )
-  .demandCommand(0, 1)
-  .help()
-  .alias("help", "h")
-  .version()
-  .alias("version", "v")
+  .command(
+    "vo <videoId>",
+    "Generate VO per beat via WaveSpeed TTS",
+    (y) =>
+      y
+        .positional("videoId", { type: "string", demandOption: true })
+        .option("dry-run", { type: "boolean", default: false })
+        .option("voice-id", { type: "string" }),
+    (argv) =>
+      run(() =>
+        cmdVo(String(argv.videoId), {
+          dryRun: argv["dry-run"],
+          voiceId: argv["voice-id"],
+        }),
+      ),
+  )
+  .command(
+    "timeline <videoId>",
+    "Build timeline.json from video.json + VO",
+    (y) => y.positional("videoId", { type: "string", demandOption: true }),
+    (argv) => run(() => cmdTimeline(String(argv.videoId))),
+  )
+  .command(
+    "qa <videoId>",
+    "Run automated QA checks",
+    (y) =>
+      y
+        .positional("videoId", { type: "string", demandOption: true })
+        .option("moderate", { type: "boolean", default: false }),
+    (argv) =>
+      run(() =>
+        cmdQa(String(argv.videoId), { moderate: argv.moderate }),
+      ),
+  )
+  .command(
+    "review <videoId>",
+    "Mark video in_review for user preview",
+    (y) => y.positional("videoId", { type: "string", demandOption: true }),
+    (argv) => run(() => cmdReview(String(argv.videoId))),
+  )
+  .command(
+    "approve <videoId>",
+    "User-only approval (hash guard)",
+    (y) => y.positional("videoId", { type: "string", demandOption: true }),
+    (argv) => run(() => cmdApprove(String(argv.videoId))),
+  )
+  .command(
+    "request-changes <videoId>",
+    "Request revisions",
+    (y) =>
+      y
+        .positional("videoId", { type: "string", demandOption: true })
+        .option("slot", { type: "number" })
+        .option("note", { type: "string", demandOption: true }),
+    (argv) =>
+      run(() =>
+        cmdRequestChanges(String(argv.videoId), {
+          slot: argv.slot,
+          note: String(argv.note),
+        }),
+      ),
+  )
+  .command(
+    "draft <videoId>",
+    "Render low-res DRAFT MP4",
+    (y) => y.positional("videoId", { type: "string", demandOption: true }),
+    (argv) => run(() => cmdDraft(String(argv.videoId))),
+  )
+  .command(
+    "render <videoId>",
+    "Render final MP4 (requires approved + matching hash)",
+    (y) =>
+      y
+        .positional("videoId", { type: "string", demandOption: true })
+        .option("target", {
+          type: "string",
+          choices: ["local", "lambda"],
+          default: "local",
+        }),
+    (argv) =>
+      run(() =>
+        cmdRender(String(argv.videoId), {
+          target: argv.target as "local" | "lambda",
+        }),
+      ),
+  )
+  .command(
+    "gen <videoId>",
+    "validate → vo → timeline → qa",
+    (y) =>
+      y
+        .positional("videoId", { type: "string", demandOption: true })
+        .option("dry-run", { type: "boolean", default: false })
+        .option("voice-id", { type: "string" }),
+    (argv) =>
+      run(() =>
+        cmdGen(String(argv.videoId), {
+          dryRun: argv["dry-run"],
+          voiceId: argv["voice-id"],
+        }),
+      ),
+  )
+  .command(
+    "story <videoId>",
+    "Optional AI story draft (does not write video.json)",
+    (y) =>
+      y
+        .positional("videoId", { type: "string", demandOption: true })
+        .option("prompt", { type: "string", demandOption: true }),
+    (argv) =>
+      run(() =>
+        cmdStory(String(argv.videoId), { prompt: String(argv.prompt) }),
+      ),
+  )
+  .command(
+    "balance",
+    "Show WaveSpeed account balance",
+    () => undefined,
+    () => run(() => cmdBalance()),
+  )
+  .command(
+    "handoff <videoId>",
+    "Build local handoff package (+ Drive when auth ready)",
+    (y) =>
+      y
+        .positional("videoId", { type: "string", demandOption: true })
+        .option("no-upload", { type: "boolean", default: false }),
+    (argv) =>
+      run(() =>
+        cmdHandoff(String(argv.videoId), {
+          noUpload: argv["no-upload"],
+        }),
+      ),
+  )
+  .demandCommand(1)
   .strict()
+  .help()
+  .alias("h", "help")
   .parse();

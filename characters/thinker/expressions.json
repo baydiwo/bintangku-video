@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "expressions": ["neutral", "happy", "excited", "thinking", "surprised", "calm"],
+  "mouthShapes": ["closed", "half", "open", "round", "smile"],
+  "maps": {
+    "neutral": { "mouth": "closed" },
+    "happy": { "mouth": "smile" },
+    "excited": { "mouth": "open" },
+    "thinking": { "mouth": "closed", "bulb": "on" },
+    "surprised": { "mouth": "round" },
+    "calm": { "mouth": "smile", "bulb": "dim" }
+  },
+  "_notes": "Synced with src/characters/types.ts EXPRESSION_MOUTH."
+}

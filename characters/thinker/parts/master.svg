@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" data-rig="thinker" data-version="0.1.0">
+  <!-- Snapshot; production = src/characters/ThinkerRig.tsx -->
+  <g id="treads" transform="translate(200 490)">
+    <path d="M-98 -4 C-98 -20 -78 -30 -52 -30 L52 -30 C78 -30 98 -20 98 -4 L100 12 C100 26 72 32 0 32 C-72 32 -100 26 -100 12 Z" fill="#111722" stroke="#092C61" stroke-width="5"/>
+    <circle cx="-52" r="17" fill="#197AE5" stroke="#092C61" stroke-width="3"/><circle cx="-52" r="7.5" fill="#FAB84B"/>
+    <circle cx="-18" cy="2" r="17" fill="#197AE5" stroke="#092C61" stroke-width="3"/><circle cx="-18" cy="2" r="7.5" fill="#FAB84B"/>
+    <circle cx="18" cy="2" r="17" fill="#197AE5" stroke="#092C61" stroke-width="3"/><circle cx="18" cy="2" r="7.5" fill="#FAB84B"/>
+    <circle cx="52" r="17" fill="#197AE5" stroke="#092C61" stroke-width="3"/><circle cx="52" r="7.5" fill="#FAB84B"/>
+  </g>
+  <g id="body" transform="translate(200 368)">
+    <path d="M-52 -62 C-52 -82 -34 -94 0 -94 C34 -94 52 -82 52 -62 L56 48 C56 70 36 86 0 86 C-36 86 -56 70 -56 48 Z" fill="#FFFFFF" stroke="#092C61" stroke-width="5"/>
+    <rect x="-32" y="-28" width="64" height="50" rx="12" fill="#197AE5" stroke="#092C61" stroke-width="3"/>
+  </g>
+  <g id="arm-left" transform="translate(132 330)"><rect x="-13" y="0" width="26" height="54" rx="13" fill="#FFFFFF" stroke="#092C61" stroke-width="4"/><circle cy="58" r="15" fill="#197AE5" stroke="#092C61" stroke-width="3"/></g>
+  <g id="arm-right" transform="translate(268 330)"><rect x="-13" y="0" width="26" height="48" rx="13" fill="#FFFFFF" stroke="#092C61" stroke-width="4"/><circle cy="52" r="15" fill="#197AE5" stroke="#092C61" stroke-width="3"/>
+    <g id="tablet" transform="translate(30 36) rotate(-14)"><rect x="-26" y="-36" width="52" height="72" rx="9" fill="#6AD9FD" stroke="#092C61" stroke-width="3"/></g>
+  </g>
+  <g id="head" transform="translate(200 188)">
+    <ellipse cx="-92" cy="8" rx="30" ry="36" fill="#197AE5" stroke="#092C61" stroke-width="4"/>
+    <ellipse cx="92" cy="8" rx="30" ry="36" fill="#197AE5" stroke="#092C61" stroke-width="4"/>
+    <path d="M-82 -28 C-82 -88 -50 -112 0 -112 C50 -112 82 -88 82 -28 L84 58 C84 100 50 122 0 122 C-50 122 -84 100 -84 58 Z" fill="#FFFFFF" stroke="#092C61" stroke-width="5"/>
+    <g id="antenna" transform="translate(0 -114)"><line x1="0" y1="22" x2="0" y2="-6" stroke="#092C61" stroke-width="6"/><g id="bulb-glow"><ellipse cy="-30" rx="40" ry="44" fill="#FEDA41" opacity="0.35"/></g><g id="bulb"><ellipse cy="-30" rx="24" ry="28" fill="#FEDA41" stroke="#092C61" stroke-width="4"/></g></g>
+    <g id="visor"><ellipse cx="0" cy="20" rx="60" ry="50" fill="#182A54" stroke="#092C61" stroke-width="3"/></g>
+    <g id="eye-left" transform="translate(-24 14)"><circle r="17" fill="#6AD9FD"/><circle cx="5" cy="-5" r="5.5" fill="#FFFFFF"/></g>
+    <g id="eye-right" transform="translate(24 14)"><circle r="17" fill="#6AD9FD"/><circle cx="5" cy="-5" r="5.5" fill="#FFFFFF"/></g>
+    <g id="eyelids" opacity="0"/>
+    <g id="mouth-closed"><path d="M-14 56 Q0 62 14 56" stroke="#6AD9FD" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+    <g id="mouth-half" opacity="0"/><g id="mouth-open" opacity="0"/><g id="mouth-round" opacity="0"/><g id="mouth-smile" opacity="0"/>
+  </g>
+</svg>

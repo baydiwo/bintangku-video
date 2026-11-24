@@ -1,0 +1,1445 @@
+{
+  "meta": {
+    "videoId": "20261124-thinker-kenalan",
+    "version": 1,
+    "fps": 30,
+    "slotFrames": 81,
+    "totalSlots": 15,
+    "durationInFrames": 1215,
+    "width": 1080,
+    "height": 1920,
+    "generatedAt": "2026-11-24T16:02:45.901Z",
+    "generator": "bintangku-cli@1",
+    "rigVersion": "0.0.1",
+    "remotionVersion": "4.0.546"
+  },
+  "slots": [
+    {
+      "index": 0,
+      "beatId": "b01",
+      "from": 0,
+      "durationInFrames": 81
+    },
+    {
+      "index": 1,
+      "beatId": "b02",
+      "from": 81,
+      "durationInFrames": 81
+    },
+    {
+      "index": 2,
+      "beatId": "b03",
+      "from": 162,
+      "durationInFrames": 81
+    },
+    {
+      "index": 3,
+      "beatId": "b03",
+      "from": 243,
+      "durationInFrames": 81
+    },
+    {
+      "index": 4,
+      "beatId": "b04",
+      "from": 324,
+      "durationInFrames": 81
+    },
+    {
+      "index": 5,
+      "beatId": "b05",
+      "from": 405,
+      "durationInFrames": 81
+    },
+    {
+      "index": 6,
+      "beatId": "b05",
+      "from": 486,
+      "durationInFrames": 81
+    },
+    {
+      "index": 7,
+      "beatId": "b06",
+      "from": 567,
+      "durationInFrames": 81
+    },
+    {
+      "index": 8,
+      "beatId": "b07",
+      "from": 648,
+      "durationInFrames": 81
+    },
+    {
+      "index": 9,
+      "beatId": "b08",
+      "from": 729,
+      "durationInFrames": 81
+    },
+    {
+      "index": 10,
+      "beatId": "b08",
+      "from": 810,
+      "durationInFrames": 81
+    },
+    {
+      "index": 11,
+      "beatId": "b09",
+      "from": 891,
+      "durationInFrames": 81
+    },
+    {
+      "index": 12,
+      "beatId": "b09",
+      "from": 972,
+      "durationInFrames": 81
+    },
+    {
+      "index": 13,
+      "beatId": "b10",
+      "from": 1053,
+      "durationInFrames": 81
+    },
+    {
+      "index": 14,
+      "beatId": "b11",
+      "from": 1134,
+      "durationInFrames": 81
+    }
+  ],
+  "elements": [
+    {
+      "slotIndex": 0,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 0,
+      "kind": "character",
+      "props": {
+        "pose": "cheer",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 1,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 1,
+      "kind": "character",
+      "props": {
+        "pose": "wave",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 2,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 2,
+      "kind": "character",
+      "props": {
+        "pose": "cheer",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 3,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 3,
+      "kind": "character",
+      "props": {
+        "pose": "cheer",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 4,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 4,
+      "kind": "character",
+      "props": {
+        "pose": "wave",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 5,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 5,
+      "kind": "character",
+      "props": {
+        "pose": "cheer",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 6,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 6,
+      "kind": "character",
+      "props": {
+        "pose": "cheer",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 7,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 7,
+      "kind": "character",
+      "props": {
+        "pose": "wave",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 8,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 8,
+      "kind": "character",
+      "props": {
+        "pose": "cheer",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 9,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 9,
+      "kind": "character",
+      "props": {
+        "pose": "wave",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 10,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 10,
+      "kind": "character",
+      "props": {
+        "pose": "wave",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 11,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 11,
+      "kind": "character",
+      "props": {
+        "pose": "cheer",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 12,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 12,
+      "kind": "character",
+      "props": {
+        "pose": "cheer",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 13,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 13,
+      "kind": "character",
+      "props": {
+        "pose": "wave",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    },
+    {
+      "slotIndex": 14,
+      "kind": "background",
+      "props": {
+        "type": "cosmic-flat",
+        "palette": "navy"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none"
+    },
+    {
+      "slotIndex": 14,
+      "kind": "character",
+      "props": {
+        "pose": "cheer",
+        "expression": "happy",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float"
+    }
+  ],
+  "text": [
+    {
+      "kind": "caption",
+      "from": 0,
+      "to": 81,
+      "captions": [
+        {
+          "text": "Halo!",
+          "startMs": 200,
+          "endMs": 680,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": "Aku",
+          "startMs": 1080,
+          "endMs": 1640,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": "Thinker.",
+          "startMs": 1707,
+          "endMs": 2280,
+          "timestampMs": 1993,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "kind": "caption",
+      "from": 81,
+      "to": 162,
+      "captions": [
+        {
+          "text": "Aku",
+          "startMs": 2900,
+          "endMs": 3140,
+          "timestampMs": 3020,
+          "confidence": null
+        },
+        {
+          "text": "robot",
+          "startMs": 3207,
+          "endMs": 3540,
+          "timestampMs": 3374,
+          "confidence": null
+        },
+        {
+          "text": "kecil",
+          "startMs": 3620,
+          "endMs": 4020,
+          "timestampMs": 3820,
+          "confidence": null
+        },
+        {
+          "text": "dari",
+          "startMs": 4084,
+          "endMs": 4340,
+          "timestampMs": 4212,
+          "confidence": null
+        },
+        {
+          "text": "bintangku.",
+          "startMs": 4380,
+          "endMs": 5060,
+          "timestampMs": 4720,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "kind": "caption",
+      "from": 162,
+      "to": 324,
+      "captions": [
+        {
+          "text": "Aku",
+          "startMs": 5600,
+          "endMs": 5840,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": "suka",
+          "startMs": 5920,
+          "endMs": 6320,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": "belajar",
+          "startMs": 6380,
+          "endMs": 6960,
+          "timestampMs": 6670,
+          "confidence": null
+        },
+        {
+          "text": "dan",
+          "startMs": 7040,
+          "endMs": 7280,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": "bermain.",
+          "startMs": 7340,
+          "endMs": 8000,
+          "timestampMs": 7670,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "kind": "caption",
+      "from": 324,
+      "to": 405,
+      "captions": [
+        {
+          "text": "Yuk",
+          "startMs": 11000,
+          "endMs": 11240,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": "kenalan",
+          "startMs": 11320,
+          "endMs": 11800,
+          "timestampMs": 11560,
+          "confidence": null
+        },
+        {
+          "text": "lebih",
+          "startMs": 11867,
+          "endMs": 12200,
+          "timestampMs": 12034,
+          "confidence": null
+        },
+        {
+          "text": "dekat.",
+          "startMs": 12253,
+          "endMs": 12840,
+          "timestampMs": 12547,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "kind": "caption",
+      "from": 405,
+      "to": 567,
+      "captions": [
+        {
+          "text": "Setiap",
+          "startMs": 13700,
+          "endMs": 14180,
+          "timestampMs": 13940,
+          "confidence": null
+        },
+        {
+          "text": "hari",
+          "startMs": 14260,
+          "endMs": 14580,
+          "timestampMs": 14420,
+          "confidence": null
+        },
+        {
+          "text": "ada",
+          "startMs": 14740,
+          "endMs": 15220,
+          "timestampMs": 14980,
+          "confidence": null
+        },
+        {
+          "text": "petualangan",
+          "startMs": 15300,
+          "endMs": 16100,
+          "timestampMs": 15700,
+          "confidence": null
+        },
+        {
+          "text": "baru.",
+          "startMs": 16180,
+          "endMs": 16580,
+          "timestampMs": 16380,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "kind": "caption",
+      "from": 567,
+      "to": 648,
+      "captions": [
+        {
+          "text": "Bintang-bintang",
+          "startMs": 19100,
+          "endMs": 19980,
+          "timestampMs": 19540,
+          "confidence": null
+        },
+        {
+          "text": "menemaniku.",
+          "startMs": 20020,
+          "endMs": 20860,
+          "timestampMs": 20440,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "kind": "caption",
+      "from": 648,
+      "to": 729,
+      "captions": [
+        {
+          "text": "Ayo",
+          "startMs": 21800,
+          "endMs": 22120,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": "kita",
+          "startMs": 22248,
+          "endMs": 22760,
+          "timestampMs": 22504,
+          "confidence": null
+        },
+        {
+          "text": "mulai",
+          "startMs": 22820,
+          "endMs": 23160,
+          "timestampMs": 22990,
+          "confidence": null
+        },
+        {
+          "text": "bersama.",
+          "startMs": 23208,
+          "endMs": 23800,
+          "timestampMs": 23504,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "kind": "caption",
+      "from": 729,
+      "to": 891,
+      "captions": [
+        {
+          "text": "Belajar",
+          "startMs": 24500,
+          "endMs": 24980,
+          "timestampMs": 24740,
+          "confidence": null
+        },
+        {
+          "text": "itu",
+          "startMs": 25080,
+          "endMs": 25380,
+          "timestampMs": 25230,
+          "confidence": null
+        },
+        {
+          "text": "menyenangkan",
+          "startMs": 25444,
+          "endMs": 26260,
+          "timestampMs": 25852,
+          "confidence": null
+        },
+        {
+          "text": "sekali.",
+          "startMs": 26340,
+          "endMs": 26900,
+          "timestampMs": 26620,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "kind": "caption",
+      "from": 891,
+      "to": 1053,
+      "captions": [
+        {
+          "text": "Kamu",
+          "startMs": 29900,
+          "endMs": 30140,
+          "timestampMs": 30020,
+          "confidence": null
+        },
+        {
+          "text": "siap?",
+          "startMs": 30220,
+          "endMs": 30620,
+          "timestampMs": 30420,
+          "confidence": null
+        },
+        {
+          "text": "Aku",
+          "startMs": 31140,
+          "endMs": 31820,
+          "timestampMs": 31480,
+          "confidence": null
+        },
+        {
+          "text": "siap!",
+          "startMs": 31900,
+          "endMs": 32300,
+          "timestampMs": 32100,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "kind": "caption",
+      "from": 1053,
+      "to": 1134,
+      "captions": [
+        {
+          "text": "Sampai",
+          "startMs": 35300,
+          "endMs": 35620,
+          "timestampMs": 35460,
+          "confidence": null
+        },
+        {
+          "text": "jumpa",
+          "startMs": 35684,
+          "endMs": 36100,
+          "timestampMs": 35892,
+          "confidence": null
+        },
+        {
+          "text": "di",
+          "startMs": 36180,
+          "endMs": 36340,
+          "timestampMs": 36260,
+          "confidence": null
+        },
+        {
+          "text": "video",
+          "startMs": 36393,
+          "endMs": 36660,
+          "timestampMs": 36527,
+          "confidence": null
+        },
+        {
+          "text": "berikutnya.",
+          "startMs": 36700,
+          "endMs": 37460,
+          "timestampMs": 37080,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "kind": "caption",
+      "from": 1134,
+      "to": 1215,
+      "captions": [
+        {
+          "text": "Terima",
+          "startMs": 38000,
+          "endMs": 38240,
+          "timestampMs": 38120,
+          "confidence": null
+        },
+        {
+          "text": "kasih",
+          "startMs": 38320,
+          "endMs": 38720,
+          "timestampMs": 38520,
+          "confidence": null
+        },
+        {
+          "text": "sudah",
+          "startMs": 38800,
+          "endMs": 39200,
+          "timestampMs": 39000,
+          "confidence": null
+        },
+        {
+          "text": "menonton.",
+          "startMs": 39240,
+          "endMs": 39920,
+          "timestampMs": 39580,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b01.mp3",
+      "from": 6,
+      "durationInFrames": 63,
+      "volume": 1
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b02.mp3",
+      "from": 87,
+      "durationInFrames": 65,
+      "volume": 1
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b03.mp3",
+      "from": 168,
+      "durationInFrames": 72,
+      "volume": 1
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b04.mp3",
+      "from": 330,
+      "durationInFrames": 56,
+      "volume": 1
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b05.mp3",
+      "from": 411,
+      "durationInFrames": 87,
+      "volume": 1
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b06.mp3",
+      "from": 573,
+      "durationInFrames": 53,
+      "volume": 1
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b07.mp3",
+      "from": 654,
+      "durationInFrames": 60,
+      "volume": 1
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b08.mp3",
+      "from": 735,
+      "durationInFrames": 72,
+      "volume": 1
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b09.mp3",
+      "from": 897,
+      "durationInFrames": 72,
+      "volume": 1
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b10.mp3",
+      "from": 1059,
+      "durationInFrames": 65,
+      "volume": 1
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261124-thinker-kenalan/b11.mp3",
+      "from": 1140,
+      "durationInFrames": 58,
+      "volume": 1
+    }
+  ],
+  "mouthTracks": [
+    {
+      "beatId": "b01",
+      "frames": [
+        {
+          "frame": 6,
+          "shape": "open"
+        },
+        {
+          "frame": 14,
+          "shape": "round"
+        },
+        {
+          "frame": 18,
+          "shape": "open"
+        },
+        {
+          "frame": 21,
+          "shape": "closed"
+        },
+        {
+          "frame": 32,
+          "shape": "open"
+        },
+        {
+          "frame": 46,
+          "shape": "round"
+        },
+        {
+          "frame": 50,
+          "shape": "closed"
+        },
+        {
+          "frame": 51,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "beatId": "b02",
+      "frames": [
+        {
+          "frame": 87,
+          "shape": "open"
+        },
+        {
+          "frame": 91,
+          "shape": "round"
+        },
+        {
+          "frame": 95,
+          "shape": "closed"
+        },
+        {
+          "frame": 96,
+          "shape": "open"
+        },
+        {
+          "frame": 98,
+          "shape": "round"
+        },
+        {
+          "frame": 101,
+          "shape": "open"
+        },
+        {
+          "frame": 102,
+          "shape": "round"
+        },
+        {
+          "frame": 105,
+          "shape": "open"
+        },
+        {
+          "frame": 107,
+          "shape": "closed"
+        },
+        {
+          "frame": 108,
+          "shape": "open"
+        },
+        {
+          "frame": 121,
+          "shape": "closed"
+        },
+        {
+          "frame": 122,
+          "shape": "open"
+        },
+        {
+          "frame": 147,
+          "shape": "round"
+        },
+        {
+          "frame": 150,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "beatId": "b03",
+      "frames": [
+        {
+          "frame": 168,
+          "shape": "open"
+        },
+        {
+          "frame": 172,
+          "shape": "round"
+        },
+        {
+          "frame": 176,
+          "shape": "closed"
+        },
+        {
+          "frame": 177,
+          "shape": "open"
+        },
+        {
+          "frame": 180,
+          "shape": "round"
+        },
+        {
+          "frame": 183,
+          "shape": "open"
+        },
+        {
+          "frame": 190,
+          "shape": "closed"
+        },
+        {
+          "frame": 191,
+          "shape": "open"
+        },
+        {
+          "frame": 209,
+          "shape": "closed"
+        },
+        {
+          "frame": 211,
+          "shape": "open"
+        },
+        {
+          "frame": 219,
+          "shape": "closed"
+        },
+        {
+          "frame": 220,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "beatId": "b04",
+      "frames": [
+        {
+          "frame": 330,
+          "shape": "open"
+        },
+        {
+          "frame": 332,
+          "shape": "round"
+        },
+        {
+          "frame": 335,
+          "shape": "open"
+        },
+        {
+          "frame": 338,
+          "shape": "closed"
+        },
+        {
+          "frame": 339,
+          "shape": "open"
+        },
+        {
+          "frame": 354,
+          "shape": "closed"
+        },
+        {
+          "frame": 356,
+          "shape": "open"
+        },
+        {
+          "frame": 366,
+          "shape": "closed"
+        },
+        {
+          "frame": 367,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "beatId": "b05",
+      "frames": [
+        {
+          "frame": 411,
+          "shape": "open"
+        },
+        {
+          "frame": 426,
+          "shape": "closed"
+        },
+        {
+          "frame": 427,
+          "shape": "open"
+        },
+        {
+          "frame": 438,
+          "shape": "closed"
+        },
+        {
+          "frame": 442,
+          "shape": "open"
+        },
+        {
+          "frame": 457,
+          "shape": "closed"
+        },
+        {
+          "frame": 459,
+          "shape": "open"
+        },
+        {
+          "frame": 466,
+          "shape": "round"
+        },
+        {
+          "frame": 469,
+          "shape": "open"
+        },
+        {
+          "frame": 483,
+          "shape": "closed"
+        },
+        {
+          "frame": 485,
+          "shape": "open"
+        },
+        {
+          "frame": 492,
+          "shape": "round"
+        },
+        {
+          "frame": 495,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "beatId": "b06",
+      "frames": [
+        {
+          "frame": 573,
+          "shape": "open"
+        },
+        {
+          "frame": 620,
+          "shape": "round"
+        },
+        {
+          "frame": 624,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "beatId": "b07",
+      "frames": [
+        {
+          "frame": 654,
+          "shape": "open"
+        },
+        {
+          "frame": 660,
+          "shape": "round"
+        },
+        {
+          "frame": 664,
+          "shape": "closed"
+        },
+        {
+          "frame": 667,
+          "shape": "open"
+        },
+        {
+          "frame": 683,
+          "shape": "closed"
+        },
+        {
+          "frame": 684,
+          "shape": "open"
+        },
+        {
+          "frame": 686,
+          "shape": "round"
+        },
+        {
+          "frame": 689,
+          "shape": "open"
+        },
+        {
+          "frame": 695,
+          "shape": "closed"
+        },
+        {
+          "frame": 696,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "beatId": "b08",
+      "frames": [
+        {
+          "frame": 735,
+          "shape": "open"
+        },
+        {
+          "frame": 750,
+          "shape": "closed"
+        },
+        {
+          "frame": 752,
+          "shape": "open"
+        },
+        {
+          "frame": 758,
+          "shape": "round"
+        },
+        {
+          "frame": 762,
+          "shape": "closed"
+        },
+        {
+          "frame": 763,
+          "shape": "open"
+        },
+        {
+          "frame": 788,
+          "shape": "closed"
+        },
+        {
+          "frame": 790,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "beatId": "b09",
+      "frames": [
+        {
+          "frame": 897,
+          "shape": "open"
+        },
+        {
+          "frame": 902,
+          "shape": "round"
+        },
+        {
+          "frame": 905,
+          "shape": "closed"
+        },
+        {
+          "frame": 906,
+          "shape": "open"
+        },
+        {
+          "frame": 919,
+          "shape": "closed"
+        },
+        {
+          "frame": 934,
+          "shape": "open"
+        },
+        {
+          "frame": 952,
+          "shape": "round"
+        },
+        {
+          "frame": 955,
+          "shape": "closed"
+        },
+        {
+          "frame": 957,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "beatId": "b10",
+      "frames": [
+        {
+          "frame": 1059,
+          "shape": "open"
+        },
+        {
+          "frame": 1069,
+          "shape": "closed"
+        },
+        {
+          "frame": 1070,
+          "shape": "open"
+        },
+        {
+          "frame": 1072,
+          "shape": "round"
+        },
+        {
+          "frame": 1075,
+          "shape": "open"
+        },
+        {
+          "frame": 1083,
+          "shape": "closed"
+        },
+        {
+          "frame": 1085,
+          "shape": "open"
+        },
+        {
+          "frame": 1098,
+          "shape": "round"
+        },
+        {
+          "frame": 1100,
+          "shape": "closed"
+        },
+        {
+          "frame": 1101,
+          "shape": "open"
+        },
+        {
+          "frame": 1108,
+          "shape": "round"
+        },
+        {
+          "frame": 1110,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "beatId": "b11",
+      "frames": [
+        {
+          "frame": 1140,
+          "shape": "open"
+        },
+        {
+          "frame": 1148,
+          "shape": "closed"
+        },
+        {
+          "frame": 1149,
+          "shape": "open"
+        },
+        {
+          "frame": 1162,
+          "shape": "closed"
+        },
+        {
+          "frame": 1164,
+          "shape": "open"
+        },
+        {
+          "frame": 1166,
+          "shape": "round"
+        },
+        {
+          "frame": 1169,
+          "shape": "open"
+        },
+        {
+          "frame": 1176,
+          "shape": "closed"
+        },
+        {
+          "frame": 1177,
+          "shape": "open"
+        },
+        {
+          "frame": 1180,
+          "shape": "round"
+        },
+        {
+          "frame": 1183,
+          "shape": "open"
+        },
+        {
+          "frame": 1185,
+          "shape": "round"
+        },
+        {
+          "frame": 1190,
+          "shape": "open"
+        }
+      ]
+    }
+  ],
+  "approvalHash": "4b96bdb75229861640817ef14733c7caa96e7f4f1524ce5f7f0cb2def58fe678"
+}

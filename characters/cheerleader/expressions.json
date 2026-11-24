@@ -1,0 +1,7 @@
+{
+  "version": "0.1.0",
+  "expressions": ["neutral", "happy", "excited", "surprised", "calm"],
+  "mouthShapes": ["closed", "half", "open", "round", "smile"],
+  "maps": {},
+  "_notes": "Mapping expression setelah rig SVG siap. Referensi: brand/reference/cheerleader.png"
+}

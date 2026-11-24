@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "poses": ["idle", "wave", "think", "cheer", "point", "calm", "zoom"],
+  "transforms": {
+    "idle": { "armLeftRot": 8, "armRightRot": -8, "headRot": 0, "bodyY": 0, "treadsScaleX": 1, "bulb": "dim" },
+    "wave": { "armLeftRot": 12, "armRightRot": -55, "headRot": -4, "bodyY": -4, "treadsScaleX": 1, "bulb": "on" },
+    "think": { "armLeftRot": 20, "armRightRot": -35, "headRot": 8, "bodyY": 2, "treadsScaleX": 1, "bulb": "on" },
+    "cheer": { "armLeftRot": -70, "armRightRot": -70, "headRot": -2, "bodyY": -10, "treadsScaleX": 1.02, "bulb": "on" },
+    "point": { "armLeftRot": 10, "armRightRot": -40, "headRot": -6, "bodyY": 0, "treadsScaleX": 1, "bulb": "dim" },
+    "calm": { "armLeftRot": 18, "armRightRot": -18, "headRot": 2, "bodyY": 4, "treadsScaleX": 1, "bulb": "dim" },
+    "zoom": { "armLeftRot": 5, "armRightRot": -5, "headRot": 0, "bodyY": -6, "treadsScaleX": 1.08, "bulb": "on" }
+  },
+  "_notes": "Synced with src/characters/types.ts POSE_MAP (TASK-USR-001 v0.1)."
+}

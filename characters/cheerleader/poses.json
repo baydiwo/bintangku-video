@@ -1,0 +1,6 @@
+{
+  "version": "0.1.0",
+  "poses": ["idle", "wave", "cheer", "point", "calm", "jump"],
+  "transforms": {},
+  "_notes": "Cheerleader MVP guest (OQ-17). Transform diisi setelah master SVG (TASK-USR-001)."
+}

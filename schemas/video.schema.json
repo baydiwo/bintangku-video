@@ -10,23 +10,119 @@
     "title",
     "language",
     "targetDuration",
-    "beats",
     "status",
     "history"
   ],
   "additionalProperties": false,
   "properties": {
-    "schemaVersion": { "type": "string", "pattern": "^1\\.\\d+\\.\\d+$" },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^(1|2)\\.\\d+\\.\\d+$"
+    },
     "id": { "type": "string", "pattern": "^\\d{8}-[a-z0-9-]+$" },
     "version": { "type": "integer", "minimum": 1 },
     "title": { "type": "string", "minLength": 1 },
     "pillar": { "type": "string" },
+    "topic": { "type": "string" },
+    "format": {
+      "type": "string",
+      "enum": ["kids-story", "legacy"]
+    },
     "language": { "type": "string", "default": "id" },
     "targetDuration": { "type": "integer", "enum": [30, 60] },
+    "pacing": {
+      "type": "string",
+      "enum": ["scene", "grid"],
+      "description": "scene = DEC-57 (aktif). grid = legacy v1.3. dialogue multi-voice ditolak."
+    },
     "voiceOverride": { "type": "object" },
+    "cast": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "character"],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": ["surrogate", "catalyst", "guide", "cameo"]
+          },
+          "character": { "type": "string" }
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "beatId", "voText"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^S\\d{2}$" },
+          "beatId": {
+            "type": "string",
+            "pattern": "^B[1-9](\\+B[1-9])*$"
+          },
+          "voText": { "type": "string", "minLength": 1 },
+          "speech": { "type": "string" },
+          "durationHintSec": { "type": "number", "minimum": 0.5 },
+          "delivery": {
+            "type": "string",
+            "enum": ["spoken", "sung"],
+            "default": "spoken"
+          },
+          "cast": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "character": { "type": "string" },
+                "pose": { "type": "string" },
+                "expression": { "type": "string" },
+                "x": { "type": "number" },
+                "y": { "type": "number" }
+              }
+            }
+          },
+          "action": { "type": "string" },
+          "background": { "type": "object" },
+          "ornaments": { "type": "array" },
+          "sfx": { "type": "array" },
+          "captionStep": { "type": ["string", "null"] },
+          "camera": { "type": "string" }
+        }
+      }
+    },
+    "jingle": {
+      "type": "object",
+      "properties": {
+        "durationSec": { "type": "number", "minimum": 5, "maximum": 15 },
+        "lines": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "required": ["lyric"],
+            "properties": {
+              "lyric": { "type": "string" },
+              "caption": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "endCard": {
+      "type": "object",
+      "properties": {
+        "tagline": { "type": "string" },
+        "method": { "type": "array", "items": { "type": "string" } }
+      }
+    },
     "beats": {
       "type": "array",
       "minItems": 1,
+      "description": "Legacy v1.x grid beats — jangan dipakai untuk format cerita baru",
       "items": {
         "type": "object",
         "required": ["id", "text", "shots"],

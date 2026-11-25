@@ -37,6 +37,44 @@ export function validateVideoDoc(video: VideoDoc): void {
     throw new CliError("ERR-SCHEMA", `video.json invalid:\n${details}`);
   }
 
+  const pacing = video.pacing ?? (video.scenes?.length ? "scene" : "grid");
+
+  if (pacing === "scene") {
+    if (!video.scenes?.length) {
+      throw new CliError(
+        "ERR-SCHEMA",
+        `pacing=scene requires scenes[] (DEC-57)`,
+      );
+    }
+    const sceneIds = new Set<string>();
+    const sungBeats = new Set<string>();
+    for (const scene of video.scenes) {
+      if (sceneIds.has(scene.id)) {
+        throw new CliError("ERR-SCHEMA", `Duplicate scene id ${scene.id}`);
+      }
+      sceneIds.add(scene.id);
+      if (scene.delivery === "sung") {
+        // Beberapa scene B6 (langkah jingle) boleh sung — max 1 beat sung
+        const beatRoot = scene.beatId.split("+")[0] ?? scene.beatId;
+        sungBeats.add(beatRoot);
+      }
+    }
+    if (sungBeats.size > 1) {
+      throw new CliError(
+        "ERR-SCHEMA",
+        `At most 1 sung beat allowed (found ${[...sungBeats].join(", ")})`,
+      );
+    }
+    return;
+  }
+
+  if (!video.beats?.length) {
+    throw new CliError(
+      "ERR-SCHEMA",
+      `Legacy pacing requires beats[] (or set pacing=scene with scenes[])`,
+    );
+  }
+
   const beatIds = new Set<string>();
   let sungCount = 0;
   for (const beat of video.beats) {

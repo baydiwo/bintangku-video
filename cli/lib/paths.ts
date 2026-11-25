@@ -39,5 +39,15 @@ export const beatAlignmentPath = (videoId: string, beatId: string) =>
 export const beatEnvelopePath = (videoId: string, beatId: string) =>
   path.join(publicVoiceoverDir(videoId), `${beatId}.envelope.json`);
 
+/** Scene-first VO paths (DEC-57) — same folder, keyed by S01… */
+export const sceneMp3Path = (videoId: string, sceneId: string) =>
+  path.join(publicVoiceoverDir(videoId), `${sceneId}.mp3`);
+
+export const sceneAlignmentPath = (videoId: string, sceneId: string) =>
+  path.join(publicVoiceoverDir(videoId), `${sceneId}.alignment.json`);
+
+export const sceneEnvelopePath = (videoId: string, sceneId: string) =>
+  path.join(publicVoiceoverDir(videoId), `${sceneId}.envelope.json`);
+
 export const voManifestPath = (videoId: string) =>
   path.join(publicVoiceoverDir(videoId), "manifest.json");

@@ -82,9 +82,19 @@ yargs(hideBin(process.argv))
   )
   .command(
     "timeline <videoId>",
-    "Build timeline.json from video.json + VO",
-    (y) => y.positional("videoId", { type: "string", demandOption: true }),
-    (argv) => run(() => cmdTimeline(String(argv.videoId))),
+    "Build timeline.json from video.json + VO (scene draft: --draft / auto on status=draft)",
+    (y) =>
+      y
+        .positional("videoId", { type: "string", demandOption: true })
+        .option("draft", {
+          type: "boolean",
+          default: false,
+          describe: "Scene-first draft from durationHintSec (no VO)",
+        }),
+    (argv) =>
+      run(() =>
+        cmdTimeline(String(argv.videoId), { draft: Boolean(argv.draft) }),
+      ),
   )
   .command(
     "qa <videoId>",

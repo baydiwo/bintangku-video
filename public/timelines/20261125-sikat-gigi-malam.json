@@ -1,0 +1,785 @@
+{
+  "meta": {
+    "videoId": "20261125-sikat-gigi-malam",
+    "version": 1,
+    "fps": 30,
+    "slotFrames": 81,
+    "totalSlots": 17,
+    "durationInFrames": 1800,
+    "width": 1080,
+    "height": 1920,
+    "pacing": "scene",
+    "generatedAt": "2026-11-25T00:28:40.577Z",
+    "generator": "bintangku-cli@2-scene-draft",
+    "rigVersion": "0.1.1",
+    "remotionVersion": "4.0.546"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beatId": "B1",
+      "from": 0,
+      "durationInFrames": 180
+    },
+    {
+      "id": "S02",
+      "beatId": "B2",
+      "from": 180,
+      "durationInFrames": 105
+    },
+    {
+      "id": "S03",
+      "beatId": "B2",
+      "from": 285,
+      "durationInFrames": 75
+    },
+    {
+      "id": "S04",
+      "beatId": "B3",
+      "from": 360,
+      "durationInFrames": 60
+    },
+    {
+      "id": "S05",
+      "beatId": "B3",
+      "from": 420,
+      "durationInFrames": 180
+    },
+    {
+      "id": "S06",
+      "beatId": "B4",
+      "from": 600,
+      "durationInFrames": 150
+    },
+    {
+      "id": "S07",
+      "beatId": "B5",
+      "from": 750,
+      "durationInFrames": 240
+    },
+    {
+      "id": "S08",
+      "beatId": "B6",
+      "from": 990,
+      "durationInFrames": 60
+    },
+    {
+      "id": "S09",
+      "beatId": "B6",
+      "from": 1050,
+      "durationInFrames": 60
+    },
+    {
+      "id": "S10",
+      "beatId": "B6",
+      "from": 1110,
+      "durationInFrames": 60
+    },
+    {
+      "id": "S11",
+      "beatId": "B6",
+      "from": 1170,
+      "durationInFrames": 60
+    },
+    {
+      "id": "S12",
+      "beatId": "B6",
+      "from": 1230,
+      "durationInFrames": 60
+    },
+    {
+      "id": "S13",
+      "beatId": "B6",
+      "from": 1290,
+      "durationInFrames": 60
+    },
+    {
+      "id": "S14",
+      "beatId": "B7",
+      "from": 1350,
+      "durationInFrames": 150
+    },
+    {
+      "id": "S15",
+      "beatId": "B8",
+      "from": 1500,
+      "durationInFrames": 120
+    },
+    {
+      "id": "S16",
+      "beatId": "B8",
+      "from": 1620,
+      "durationInFrames": 90
+    },
+    {
+      "id": "S17",
+      "beatId": "B9",
+      "from": 1710,
+      "durationInFrames": 90
+    }
+  ],
+  "slots": [
+    {
+      "index": 0,
+      "beatId": "S01@B1",
+      "from": 0,
+      "durationInFrames": 180
+    },
+    {
+      "index": 1,
+      "beatId": "S02@B2",
+      "from": 180,
+      "durationInFrames": 105
+    },
+    {
+      "index": 2,
+      "beatId": "S03@B2",
+      "from": 285,
+      "durationInFrames": 75
+    },
+    {
+      "index": 3,
+      "beatId": "S04@B3",
+      "from": 360,
+      "durationInFrames": 60
+    },
+    {
+      "index": 4,
+      "beatId": "S05@B3",
+      "from": 420,
+      "durationInFrames": 180
+    },
+    {
+      "index": 5,
+      "beatId": "S06@B4",
+      "from": 600,
+      "durationInFrames": 150
+    },
+    {
+      "index": 6,
+      "beatId": "S07@B5",
+      "from": 750,
+      "durationInFrames": 240
+    },
+    {
+      "index": 7,
+      "beatId": "S08@B6",
+      "from": 990,
+      "durationInFrames": 60
+    },
+    {
+      "index": 8,
+      "beatId": "S09@B6",
+      "from": 1050,
+      "durationInFrames": 60
+    },
+    {
+      "index": 9,
+      "beatId": "S10@B6",
+      "from": 1110,
+      "durationInFrames": 60
+    },
+    {
+      "index": 10,
+      "beatId": "S11@B6",
+      "from": 1170,
+      "durationInFrames": 60
+    },
+    {
+      "index": 11,
+      "beatId": "S12@B6",
+      "from": 1230,
+      "durationInFrames": 60
+    },
+    {
+      "index": 12,
+      "beatId": "S13@B6",
+      "from": 1290,
+      "durationInFrames": 60
+    },
+    {
+      "index": 13,
+      "beatId": "S14@B7",
+      "from": 1350,
+      "durationInFrames": 150
+    },
+    {
+      "index": 14,
+      "beatId": "S15@B8",
+      "from": 1500,
+      "durationInFrames": 120
+    },
+    {
+      "index": 15,
+      "beatId": "S16@B8",
+      "from": 1620,
+      "durationInFrames": 90
+    },
+    {
+      "index": 16,
+      "beatId": "S17@B9",
+      "from": 1710,
+      "durationInFrames": 90
+    }
+  ],
+  "elements": [
+    {
+      "slotIndex": 0,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S01"
+    },
+    {
+      "slotIndex": 0,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "stand",
+        "expression": "sleepy",
+        "x": 0.5,
+        "y": 0.68
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S01"
+    },
+    {
+      "slotIndex": 1,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S02"
+    },
+    {
+      "slotIndex": 1,
+      "kind": "character",
+      "props": {
+        "character": "explorer",
+        "pose": "stand",
+        "expression": "alert",
+        "x": 0.32,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S02"
+    },
+    {
+      "slotIndex": 1,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "stand",
+        "expression": "sleepy",
+        "x": 0.68,
+        "y": 0.7
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S02"
+    },
+    {
+      "slotIndex": 2,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S03"
+    },
+    {
+      "slotIndex": 2,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "stand-34",
+        "expression": "dismissive",
+        "x": 0.5,
+        "y": 0.6
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S03"
+    },
+    {
+      "slotIndex": 3,
+      "kind": "background",
+      "props": {
+        "type": "fantasy",
+        "palette": "pastel-cosmic"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S04"
+    },
+    {
+      "slotIndex": 3,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "straps",
+        "expression": "surprised",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S04"
+    },
+    {
+      "slotIndex": 4,
+      "kind": "background",
+      "props": {
+        "type": "fantasy",
+        "palette": "pastel-cosmic"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S05"
+    },
+    {
+      "slotIndex": 4,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "straps",
+        "expression": "scared",
+        "x": 0.5,
+        "y": 0.65
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S05"
+    },
+    {
+      "slotIndex": 5,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S06"
+    },
+    {
+      "slotIndex": 5,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "straps",
+        "expression": "worried",
+        "x": 0.38,
+        "y": 0.65
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S06"
+    },
+    {
+      "slotIndex": 5,
+      "kind": "character",
+      "props": {
+        "character": "dream-keeper",
+        "pose": "sit",
+        "expression": "soft",
+        "x": 0.65,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S06"
+    },
+    {
+      "slotIndex": 6,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S07"
+    },
+    {
+      "slotIndex": 6,
+      "kind": "character",
+      "props": {
+        "character": "dream-keeper",
+        "pose": "offer",
+        "expression": "warm",
+        "x": 0.5,
+        "y": 0.6
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S07"
+    },
+    {
+      "slotIndex": 7,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S08"
+    },
+    {
+      "slotIndex": 7,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "stand",
+        "expression": "focus",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S08"
+    },
+    {
+      "slotIndex": 8,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S09"
+    },
+    {
+      "slotIndex": 8,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "closeup",
+        "expression": "focus",
+        "x": 0.5,
+        "y": 0.58
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S09"
+    },
+    {
+      "slotIndex": 9,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S10"
+    },
+    {
+      "slotIndex": 9,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "side",
+        "expression": "focus",
+        "x": 0.5,
+        "y": 0.58
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S10"
+    },
+    {
+      "slotIndex": 10,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S11"
+    },
+    {
+      "slotIndex": 10,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "closeup",
+        "expression": "focus",
+        "x": 0.5,
+        "y": 0.58
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S11"
+    },
+    {
+      "slotIndex": 11,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S12"
+    },
+    {
+      "slotIndex": 11,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "stand-34",
+        "expression": "focus",
+        "x": 0.5,
+        "y": 0.6
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S12"
+    },
+    {
+      "slotIndex": 12,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S13"
+    },
+    {
+      "slotIndex": 12,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "stand",
+        "expression": "smile",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S13"
+    },
+    {
+      "slotIndex": 13,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S14"
+    },
+    {
+      "slotIndex": 13,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "cheer",
+        "expression": "confident",
+        "x": 0.4,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S14"
+    },
+    {
+      "slotIndex": 13,
+      "kind": "character",
+      "props": {
+        "character": "dream-keeper",
+        "pose": "stand",
+        "expression": "proud",
+        "x": 0.68,
+        "y": 0.6
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S14"
+    },
+    {
+      "slotIndex": 14,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S15"
+    },
+    {
+      "slotIndex": 14,
+      "kind": "character",
+      "props": {
+        "character": "salman",
+        "pose": "stand-34",
+        "expression": "playful",
+        "x": 0.3,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S15"
+    },
+    {
+      "slotIndex": 14,
+      "kind": "character",
+      "props": {
+        "character": "explorer",
+        "pose": "lie",
+        "expression": "sleepy",
+        "x": 0.7,
+        "y": 0.72
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S15"
+    },
+    {
+      "slotIndex": 15,
+      "kind": "background",
+      "props": {
+        "type": "cosmic",
+        "palette": "night"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S16"
+    },
+    {
+      "slotIndex": 15,
+      "kind": "character",
+      "props": {
+        "character": "explorer",
+        "pose": "stand",
+        "expression": "sheepish",
+        "x": 0.5,
+        "y": 0.62
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "float",
+      "sceneId": "S16"
+    },
+    {
+      "slotIndex": 16,
+      "kind": "background",
+      "props": {
+        "type": "endcard",
+        "palette": "brand"
+      },
+      "enter": "pop",
+      "exit": "none",
+      "motion": "none",
+      "sceneId": "S17"
+    }
+  ],
+  "text": [
+    {
+      "kind": "onScreen",
+      "from": 990,
+      "to": 1050,
+      "content": "Ambil Sikat Dan Pasta",
+      "sceneId": "S08"
+    },
+    {
+      "kind": "onScreen",
+      "from": 1050,
+      "to": 1110,
+      "content": "Sikat Depan Pelan-Pelan",
+      "sceneId": "S09"
+    },
+    {
+      "kind": "onScreen",
+      "from": 1110,
+      "to": 1170,
+      "content": "Sikat Dalam, Atas, Bawah",
+      "sceneId": "S10"
+    },
+    {
+      "kind": "onScreen",
+      "from": 1170,
+      "to": 1230,
+      "content": "Sikat Lidah Juga Ya",
+      "sceneId": "S11"
+    },
+    {
+      "kind": "onScreen",
+      "from": 1230,
+      "to": 1290,
+      "content": "Kumur, Bilas, Selesai",
+      "sceneId": "S12"
+    },
+    {
+      "kind": "onScreen",
+      "from": 1290,
+      "to": 1350,
+      "content": "Gigi Bersih, Siap Mimpi",
+      "sceneId": "S13"
+    },
+    {
+      "kind": "onScreen",
+      "from": 1710,
+      "to": 1800,
+      "content": "Langkah Kecil Menuju Anak Mandiri",
+      "sceneId": "S17"
+    }
+  ],
+  "audio": [],
+  "mouthTracks": [],
+  "approvalHash": "43d15bdf00e48f94c79d5f193ccc08d8adc71dad599be1afdeb126a18000dc35"
+}

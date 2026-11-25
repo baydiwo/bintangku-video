@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "20261125-sikat-gigi-malam",
+  "version": 1,
+  "title": "Sikat Gigi Sebelum Tidur",
+  "pillar": "kebiasaan",
+  "topic": "sikat gigi sebelum tidur",
+  "format": "kids-story",
+  "language": "id",
+  "targetDuration": 60,
+  "pacing": "scene",
+  "cast": [
+    {
+      "role": "surrogate",
+      "character": "salman"
+    },
+    {
+      "role": "catalyst",
+      "character": "explorer"
+    },
+    {
+      "role": "guide",
+      "character": "dream-keeper"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "S01",
+      "beatId": "B1",
+      "voText": "Malam hari. Salman sudah di kasur, mata mengantuk, mau langsung tidur.",
+      "durationHintSec": 6,
+      "delivery": "spoken",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "stand",
+          "expression": "sleepy",
+          "x": 0.5,
+          "y": 0.68
+        }
+      ],
+      "action": "Salman menarik selimut, menguap",
+      "background": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      },
+      "sfx": [
+        {
+          "id": "yawn",
+          "cue": "start"
+        }
+      ],
+      "captionStep": null
+    },
+    {
+      "id": "S02",
+      "beatId": "B2",
+      "voText": "Explorer muncul di pintu dengan sikat gigi. Masih belum sikat, Salman!",
+      "durationHintSec": 3.5,
+      "delivery": "spoken",
+      "cast": [
+        {
+          "character": "explorer",
+          "pose": "stand",
+          "expression": "alert",
+          "x": 0.32,
+          "y": 0.62
+        },
+        {
+          "character": "salman",
+          "pose": "stand",
+          "expression": "sleepy",
+          "x": 0.68,
+          "y": 0.7
+        }
+      ],
+      "action": "Explorer angkat sikat generik; jetpack meredup",
+      "background": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      },
+      "sfx": [
+        {
+          "id": "swoosh",
+          "cue": "enter"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beatId": "B2",
+      "voText": "Salman menguap. Gigi aku masih bersih kok…",
+      "durationHintSec": 2.5,
+      "delivery": "spoken",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "stand-34",
+          "expression": "dismissive",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ],
+      "action": "Close Salman, push-in pelan, nunjuk wajah",
+      "background": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      }
+    },
+    {
+      "id": "S04",
+      "beatId": "B3",
+      "voText": "Tiba-tiba ruang jadi khayalan berbintang. Stiker kuman gigi muncul.",
+      "durationHintSec": 2,
+      "delivery": "spoken",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "straps",
+          "expression": "surprised",
+          "x": 0.5,
+          "y": 0.62
+        }
+      ],
+      "action": "Transisi iris/swoosh ke ruang datar pastel-cosmic; stiker kuman 2D pop",
+      "background": {
+        "type": "fantasy",
+        "palette": "pastel-cosmic"
+      },
+      "sfx": [
+        {
+          "id": "swoosh"
+        },
+        {
+          "id": "pop"
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beatId": "B3",
+      "voText": "Stiker mengitari kepala. Salman merapatkan selimut — jangan deket-deket!",
+      "durationHintSec": 6,
+      "delivery": "spoken",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "straps",
+          "expression": "scared",
+          "x": 0.5,
+          "y": 0.65
+        }
+      ],
+      "action": "Push-in ke wajah; stiker chase; Salman takut",
+      "background": {
+        "type": "fantasy",
+        "palette": "pastel-cosmic"
+      },
+      "sfx": [
+        {
+          "id": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beatId": "B4",
+      "voText": "Salman memanggil Dream Keeper. Kak Keeper… aku takut gigi rusak.",
+      "durationHintSec": 5,
+      "delivery": "spoken",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "straps",
+          "expression": "worried",
+          "x": 0.38,
+          "y": 0.65
+        },
+        {
+          "character": "dream-keeper",
+          "pose": "sit",
+          "expression": "soft",
+          "x": 0.65,
+          "y": 0.62
+        }
+      ],
+      "action": "Two-shot; lampu kembali hangat; Salman mendekat",
+      "background": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      }
+    },
+    {
+      "id": "S07",
+      "beatId": "B5",
+      "voText": "Dream Keeper menenangkan. Tiap malam, satu langkah kecil. Kebiasaan itu yang bikin mandiri.",
+      "durationHintSec": 8,
+      "delivery": "spoken",
+      "cast": [
+        {
+          "character": "dream-keeper",
+          "pose": "offer",
+          "expression": "warm",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ],
+      "action": "Keeper senyum, sodorkan sikat generik",
+      "background": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      },
+      "sfx": [
+        {
+          "id": "sparkle"
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "beatId": "B6",
+      "voText": "Ambil sikat dan pasta.",
+      "durationHintSec": 2,
+      "delivery": "sung",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "stand",
+          "expression": "focus",
+          "x": 0.5,
+          "y": 0.62
+        }
+      ],
+      "action": "Insert tangan + sikat & pasta generik",
+      "background": {
+        "type": "cosmic",
+        "palette": "night-warm"
+      },
+      "sfx": [
+        {
+          "id": "pop"
+        },
+        {
+          "id": "soap-squirt"
+        }
+      ],
+      "captionStep": "Ambil Sikat Dan Pasta"
+    },
+    {
+      "id": "S09",
+      "beatId": "B6",
+      "voText": "Sikat depan pelan-pelan.",
+      "durationHintSec": 2,
+      "delivery": "sung",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "closeup",
+          "expression": "focus",
+          "x": 0.5,
+          "y": 0.58
+        }
+      ],
+      "action": "Close mulut/visor, gerak sikat 2D, busa partikel",
+      "sfx": [
+        {
+          "id": "scrub"
+        }
+      ],
+      "captionStep": "Sikat Depan Pelan-Pelan"
+    },
+    {
+      "id": "S10",
+      "beatId": "B6",
+      "voText": "Sikat dalam, atas, bawah.",
+      "durationHintSec": 2,
+      "delivery": "sung",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "side",
+          "expression": "focus",
+          "x": 0.5,
+          "y": 0.58
+        }
+      ],
+      "action": "Angle samping; sikat dalam atas bawah",
+      "sfx": [
+        {
+          "id": "scrub"
+        }
+      ],
+      "captionStep": "Sikat Dalam, Atas, Bawah"
+    },
+    {
+      "id": "S11",
+      "beatId": "B6",
+      "voText": "Sikat lidah juga ya.",
+      "durationHintSec": 2,
+      "delivery": "sung",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "closeup",
+          "expression": "focus",
+          "x": 0.5,
+          "y": 0.58
+        }
+      ],
+      "action": "Sikat lidah; stiker kuman 2D lari",
+      "sfx": [
+        {
+          "id": "pop"
+        }
+      ],
+      "captionStep": "Sikat Lidah Juga Ya"
+    },
+    {
+      "id": "S12",
+      "beatId": "B6",
+      "voText": "Kumur, bilas, selesai.",
+      "durationHintSec": 2,
+      "delivery": "sung",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "stand-34",
+          "expression": "focus",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ],
+      "action": "Insert gelas / percik air",
+      "sfx": [
+        {
+          "id": "water"
+        }
+      ],
+      "captionStep": "Kumur, Bilas, Selesai"
+    },
+    {
+      "id": "S13",
+      "beatId": "B6",
+      "voText": "Gigi bersih, siap mimpi.",
+      "durationHintSec": 2,
+      "delivery": "sung",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "stand",
+          "expression": "smile",
+          "x": 0.5,
+          "y": 0.62
+        }
+      ],
+      "action": "Mengelap mulut; senyum mengilap; busa hilang",
+      "sfx": [
+        {
+          "id": "towel"
+        },
+        {
+          "id": "sparkle"
+        }
+      ],
+      "captionStep": "Gigi Bersih, Siap Mimpi"
+    },
+    {
+      "id": "S14",
+      "beatId": "B7",
+      "voText": "Salman berdiri tegak. Aku bisa sendiri! Bintang di topi Keeper menyala pelan.",
+      "durationHintSec": 5,
+      "delivery": "spoken",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "cheer",
+          "expression": "confident",
+          "x": 0.4,
+          "y": 0.62
+        },
+        {
+          "character": "dream-keeper",
+          "pose": "stand",
+          "expression": "proud",
+          "x": 0.68,
+          "y": 0.6
+        }
+      ],
+      "action": "Push-in hangat; bintang topi Keeper glow",
+      "sfx": [
+        {
+          "id": "sparkle"
+        }
+      ]
+    },
+    {
+      "id": "S15",
+      "beatId": "B8",
+      "voText": "Explorer mau tidur masih pegang kue. Salman mengingatkan: kamu juga belum sikat!",
+      "durationHintSec": 4,
+      "delivery": "spoken",
+      "cast": [
+        {
+          "character": "salman",
+          "pose": "stand-34",
+          "expression": "playful",
+          "x": 0.3,
+          "y": 0.62
+        },
+        {
+          "character": "explorer",
+          "pose": "lie",
+          "expression": "sleepy",
+          "x": 0.7,
+          "y": 0.72
+        }
+      ],
+      "action": "Framing cermin B2; kue di tangan Explorer",
+      "sfx": [
+        {
+          "id": "rustle"
+        }
+      ]
+    },
+    {
+      "id": "S16",
+      "beatId": "B8",
+      "voText": "Explorer malu, lalu bangkit ambil sikat. Iya, iya… tunggu dulu.",
+      "durationHintSec": 3,
+      "delivery": "spoken",
+      "cast": [
+        {
+          "character": "explorer",
+          "pose": "stand",
+          "expression": "sheepish",
+          "x": 0.5,
+          "y": 0.62
+        }
+      ],
+      "action": "Close Explorer ketawa kecil, ambil sikat",
+      "sfx": [
+        {
+          "id": "boing"
+        }
+      ]
+    },
+    {
+      "id": "S17",
+      "beatId": "B9",
+      "voText": "Langkah kecil menuju anak mandiri.",
+      "durationHintSec": 3,
+      "delivery": "spoken",
+      "cast": [],
+      "action": "End card diam + bintang mengambang",
+      "background": {
+        "type": "endcard",
+        "palette": "brand"
+      },
+      "sfx": [
+        {
+          "id": "sparkle"
+        }
+      ],
+      "captionStep": "Langkah Kecil Menuju Anak Mandiri"
+    }
+  ],
+  "jingle": {
+    "durationSec": 12,
+    "lines": [
+      {
+        "lyric": "Ambil sikat dan pasta",
+        "caption": "Ambil Sikat Dan Pasta"
+      },
+      {
+        "lyric": "Sikat depan pelan-pelan",
+        "caption": "Sikat Depan Pelan-Pelan"
+      },
+      {
+        "lyric": "Sikat dalam, atas, bawah",
+        "caption": "Sikat Dalam, Atas, Bawah"
+      },
+      {
+        "lyric": "Sikat lidah juga ya",
+        "caption": "Sikat Lidah Juga Ya"
+      },
+      {
+        "lyric": "Kumur, bilas, selesai",
+        "caption": "Kumur, Bilas, Selesai"
+      },
+      {
+        "lyric": "Gigi bersih, siap mimpi",
+        "caption": "Gigi Bersih, Siap Mimpi"
+      }
+    ]
+  },
+  "endCard": {
+    "tagline": "Langkah Kecil Menuju Anak Mandiri",
+    "method": [
+      "Kebiasaan",
+      "Mandiri",
+      "Rutin malam"
+    ]
+  },
+  "captions": {
+    "enabled": true
+  },
+  "status": "draft",
+  "approval": null,
+  "history": [
+    {
+      "from": "none",
+      "to": "draft",
+      "at": "2026-11-25T00:00:00.000Z",
+      "by": "agent"
+    }
+  ]
+}

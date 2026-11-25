@@ -149,18 +149,20 @@ Jangan memunculkan keenam maskot sekaligus di video 30–60 detik. Maksimal tiga
 
 ---
 
-## 5. Aturan dialog
+## 5. Aturan VO & aksi maskot
 
-1. **Tidak ada narator.** Semua informasi lewat ucapan tokoh, tindakan, dan caption langkah.
-2. Bahasa Indonesia lisan, kalimat pendek, mudah ditangkap anak dan orang tua. Ikuti brand voice: hangat, semangat, aman. Contoh diksi yang diizinkan guideline: "Kamu pasti bisa!", "Yuk, kita coba bersama!", "Setiap langkah kecilmu itu luar biasa."
-3. Satu ide per baris. Satu baris dialog idealnya 1–4 detik ucapan (kira-kira 4–12 kata).
-4. Jangan menghakimi atau mempermalukan anak. Pemicu boleh menggoda ringan; pemandu tidak memarahi.
-5. Jangan klaim medis atau psikologi ("virus pasti hilang", "ini gangguan kecemasan"). Cukup: kotor, kuman, gigi bolong, bau, susah tidur, dsb. dalam bahasa sehari-hari.
-6. Pemandu menormalkan rasa takut dulu, baru mengajar. Jangan langsung ceramah.
-7. Nilai yang dikutip adalah milik BintangKu: tagline **Langkah Kecil Menuju Anak Mandiri**, atau satu mata rantai metode (Misi → Kebiasaan → Bintang → Progres → Hadiah → Mandiri). Jangan mengutip dalil, slogan sponsor, atau kalimat referensi.
-8. Callback harus sayang: anak mengingatkan, pemicu menurut dengan malu-malu, selesai.
-9. Tiap tokoh punya suara TTS sendiri (lihat bagian 10). Jangan ada tokoh bicara tumpang tindih kecuali sahut-menyahut pendek (±0,3 dtk overlap maksimal).
-10. Semua baris orisinal. Uji: kalau orang yang pernah menonton referensi masih "kedengaran sama", tulis ulang.
+> **Amandemen 25 Nov 2026 (DEC-55, DEC-56):** produksi MVP memakai **satu suara narator**. Maskot **tidak bicara** — hanya bergerak (pantomim). Dialog antar tokoh di contoh §13 diganti menjadi narasi VO + aksi visual.
+
+1. **Ada narator VO.** Semua informasi lisan lewat satu voice (`config/voice.json`). Maskot tidak punya suara.
+2. Bahasa Indonesia lisan, kalimat pendek, mudah ditangkap anak dan orang tua. Brand voice: hangat, semangat, aman.
+3. Satu ide per scene / baris VO. Idealnya 1–4 detik ucapan per klausa (kira-kira 4–12 kata).
+4. Jangan menghakimi atau mempermalukan anak. Tone pemicu (visual) boleh menggoda ringan; guide (visual) tidak memarahi.
+5. Jangan klaim medis atau psikologi. Cukup bahasa sehari-hari (kotor, kuman, gigi bolong, bau, susah tidur).
+6. Narasi menormalkan rasa takut dulu, baru mengajar (selaras beat B4–B5).
+7. Nilai yang dikutip milik BintangKu: tagline **Langkah Kecil Menuju Anak Mandiri**, atau satu mata rantai metode. Jangan mengutip dalil/sponsor/referensi.
+8. Callback visual: anak (Dreamer) mengingatkan; pemicu (Explorer) menurut malu-malu — diceritakan VO, diperagakan maskot.
+9. **Satu** `voice_id` untuk seluruh VO + jingle selaras VO (OQ-32). Tidak ada multi-voice.
+10. Semua narasi orisinal. Uji: jangan “kedengaran sama” dengan referensi.
 
 ---
 
@@ -262,22 +264,17 @@ Jangan menumpuk SFX sampai menelan dialog atau jingle. Satu isyarat utama per sh
 
 ---
 
-## 10. Casting suara per peran
+## 10. Casting suara (amandemen DEC-55 / OQ-32)
 
-TTS dialog: model utama v1.3 `elevenlabs/eleven-v3/timing` lewat WaveSpeed, bahasa `id`, **satu `voice_id` terkunci per tokoh**. Bukan satu suara untuk semua (itu perubahan dari DEC-16 yang satu voice ID).
+TTS: `elevenlabs/eleven-v3/timing` lewat WaveSpeed, bahasa `id`, **satu `voice_id` narator** di `config/voice.json`.
 
-| Tokoh | Arah suara | Delivery |
+| Peran audio | Arah | Delivery |
 |---|---|---|
-| Dreamer | Lebih tinggi, lembut, ekspresif, anak | Bicara; di khayalan boleh lebih berbisik/cepat |
-| Explorer | Sedikit lebih rendah atau lebih cerah-cepat, enerjik | Bicara; di callback boleh merendah malu |
-| Thinker | Tenang, jelas, hangat, tidak menggurui | Bicara; baris nilai diucapkan lebih pelan dan mantap |
-| Dream Keeper | Lebih lambat, menenangkan, malam | Bicara; cocok jadi pemandu topik tidur |
-| Cheerleader | Ceria, merayakan, pendek | Bicara hanya jika ada cameo |
-| Grower | Hangat, sedang | Jarang bicara di format ini |
-| Orang tua (opsional) | Dewasa hangat, jelas berbeda dari maskot | Bicara |
-| Jingle | Suara nyanyi terpisah (hasil ACE-Step), boleh "paduan anak" atau satu penyanyi ceria | `delivery: sung`; tidak dipaksa sama dengan TTS |
+| Narator VO | Hangat, jelas, cocok anak+ortu (voice terkunci user) | `spoken` di semua beat kecuali B6 |
+| Jingle B6 | **Suara sama VO** (OQ-32); generate ACE-Step + isolator atau TTS sung | `sung` |
+| Maskot | — | **Tidak bersuara** (DEC-56) |
 
-Uji A/B suara tetap tugas pipeline (OQ-21 / TASK-VAL-006). Yang dikunci di dokumen ini hanya *arah* karakter, bukan nama voice preset vendor.
+Tabel arah suara per maskot di draf awal **tidak dipakai** untuk audio MVP.
 
 ---
 

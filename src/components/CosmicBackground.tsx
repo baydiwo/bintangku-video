@@ -4,6 +4,9 @@ import { AbsoluteFill, random, useCurrentFrame } from "remotion";
 const PALETTES: Record<string, { bg: string; star: string; glow: string }> = {
   navy: { bg: "#0d1b4b", star: "#ffd234", glow: "#1a2f7a" },
   cosmic: { bg: "#08122f", star: "#ffb800", glow: "#5BC8F5" },
+  "night-warm": { bg: "#1a1538", star: "#ffc857", glow: "#3d2a6b" },
+  "pastel-cosmic": { bg: "#2a1f4d", star: "#ffe08a", glow: "#6b5b95" },
+  brand: { bg: "#0d1b4b", star: "#ffd234", glow: "#1a2f7a" },
 };
 
 export const CosmicBackground: React.FC<{

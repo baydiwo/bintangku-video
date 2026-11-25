@@ -34,8 +34,14 @@ export async function cmdHandoff(
   fs.mkdirSync(outDir, { recursive: true });
 
   const captionLines: string[] = [];
-  for (const beat of video.beats) {
-    captionLines.push(beat.text);
+  if (video.scenes?.length) {
+    for (const scene of video.scenes) {
+      captionLines.push(scene.voText);
+    }
+  } else {
+    for (const beat of video.beats ?? []) {
+      captionLines.push(beat.text);
+    }
   }
   const captionPath = path.join(outDir, "caption.txt");
   fs.writeFileSync(captionPath, captionLines.join("\n") + "\n", "utf8");

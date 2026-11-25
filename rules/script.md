@@ -2,9 +2,11 @@
 
 - Bahasa: **Indonesia saja** (OQ-04 dikunci).
 - Brand voice: hangat, energik, kalimat pendek (BR-013).
-- Satu beat = satu ide/kalimat yang mencakup 1..n slot.
-- VO dibulatkan ke atas ke kelipatan slot 2,7 detik (BR-003, BR-007).
-- `beats[].text` = teks tampil/caption; `beats[].speech` = teks ucapan TTS jika angka/singkatan perlu dieja (EC-008).
-- Total slot 11–22 (30 dtk ≈ 11, 60 dtk ≈ 22).
+- **VO = narator 1 suara** (DEC-55). Maskot tidak punya dialog audio (DEC-56).
+- Format cerita: scene-first (`pacing: "scene"`). Satu scene ≈ satu klausa VO + aksi visual maskot.
+- `scenes[].voText` = teks TTS narator; `scenes[].speech` opsional jika angka/singkatan perlu dieja.
+- Total durasi tepat 30 dtk (900 frame) atau 60 dtk (1800 frame) @30 fps — **tanpa** grid 2,7 detik (DEC-48 / DEC-57).
+- Jingle B6: 4–8 baris acapella, suara sama VO (DEC-47, OQ-32).
 - Setiap konten baru: **storyboard lengkap + review user dulu** sebelum aset (`rules/storyboard.md`, OQ-03).
-- Draf AI (LLM beats / story generator) selalu diedit manusia dan masuk storyboard sebelum produksi.
+- Draf AI selalu diedit manusia dan masuk storyboard sebelum produksi.
+- Jangan menulis multi-voice / `character` sebagai pembicara TTS.

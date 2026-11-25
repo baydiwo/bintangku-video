@@ -30,16 +30,52 @@ export type Beat = {
   shots: Shot[];
 };
 
+/** Scene-first (DEC-57) — 1 scene = 1 unit storyboard + 1 VO file */
+export type SceneCast = {
+  character: string;
+  pose?: string;
+  expression?: string;
+  x?: number;
+  y?: number;
+};
+
+export type Scene = {
+  id: string;
+  beatId: string;
+  voText: string;
+  speech?: string;
+  durationHintSec?: number;
+  delivery?: "spoken" | "sung";
+  cast?: SceneCast[];
+  action?: string;
+  background?: Record<string, unknown>;
+  ornaments?: unknown[];
+  sfx?: unknown[];
+  captionStep?: string | null;
+  camera?: string;
+};
+
 export type VideoDoc = {
   schemaVersion: string;
   id: string;
   version: number;
   title: string;
   pillar?: string;
+  topic?: string;
+  format?: "kids-story" | "legacy";
   language: string;
   targetDuration: 30 | 60;
+  pacing?: "scene" | "grid";
   voiceOverride?: Record<string, unknown>;
-  beats: Beat[];
+  cast?: Array<{ role: string; character: string }>;
+  scenes?: Scene[];
+  jingle?: {
+    durationSec?: number;
+    lines?: Array<{ lyric: string; caption?: string }>;
+  };
+  endCard?: { tagline?: string; method?: string[] };
+  /** Legacy grid beats — unused when pacing=scene */
+  beats?: Beat[];
   captions?: { enabled?: boolean };
   status: VideoStatus;
   reviewNotes?: Array<{
@@ -73,9 +109,27 @@ export type VoManifestBeat = {
   createdAt: string;
 };
 
+export type VoManifestScene = {
+  sceneId: string;
+  beatId: string;
+  cacheKey: string;
+  file: string;
+  fileSha256: string;
+  alignmentFile: string;
+  alignmentSource: "tts" | "stt" | "local" | "proportional";
+  envelopeFile: string;
+  durationSec: number;
+  characters: number;
+  model: string;
+  predictionId: string | null;
+  estimatedCostUsd: number;
+  createdAt: string;
+};
+
 export type VoManifest = {
   videoId: string;
-  beats: VoManifestBeat[];
+  beats?: VoManifestBeat[];
+  scenes?: VoManifestScene[];
 };
 
 export type CaptionWord = {
@@ -84,6 +138,13 @@ export type CaptionWord = {
   endMs: number;
   timestampMs: number;
   confidence: number | null;
+};
+
+export type TimelineScene = {
+  id: string;
+  beatId: string;
+  from: number;
+  durationInFrames: number;
 };
 
 export type TimelineDoc = {
@@ -96,11 +157,15 @@ export type TimelineDoc = {
     durationInFrames: number;
     width: number;
     height: number;
+    pacing?: "scene" | "grid";
     generatedAt: string;
     generator: string;
     rigVersion: string;
     remotionVersion: string;
   };
+  /** Scene-first sequences (DEC-57) */
+  scenes?: TimelineScene[];
+  /** Legacy grid slots */
   slots: Array<{
     index: number;
     beatId: string;
@@ -111,7 +176,8 @@ export type TimelineDoc = {
   text: unknown[];
   audio: unknown[];
   mouthTracks: Array<{
-    beatId: string;
+    beatId?: string;
+    sceneId?: string;
     frames: Array<{ frame: number; shape: string }>;
   }>;
   approvalHash: string;

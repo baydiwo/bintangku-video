@@ -27,7 +27,7 @@
     {
       "id": "S01",
       "beatId": "B1",
-      "voText": "Malam hari. Salman sudah di kasur, mata mengantuk, mau langsung tidur.",
+      "voText": "Malam hari. Salman di kasur, mengantuk, mau langsung tidur.",
       "durationHintSec": 6,
       "delivery": "spoken",
       "cast": [
@@ -55,7 +55,7 @@
     {
       "id": "S02",
       "beatId": "B2",
-      "voText": "Explorer muncul di pintu dengan sikat gigi. Masih belum sikat, Salman!",
+      "voText": "Explorer muncul dengan sikat gigi. Belum sikat, Salman!",
       "durationHintSec": 3.5,
       "delivery": "spoken",
       "cast": [
@@ -110,7 +110,7 @@
     {
       "id": "S04",
       "beatId": "B3",
-      "voText": "Tiba-tiba ruang jadi khayalan berbintang. Stiker kuman gigi muncul.",
+      "voText": "Ruang jadi khayalan berbintang. Stiker kuman gigi muncul.",
       "durationHintSec": 2,
       "delivery": "spoken",
       "cast": [
@@ -139,7 +139,7 @@
     {
       "id": "S05",
       "beatId": "B3",
-      "voText": "Stiker mengitari kepala. Salman merapatkan selimut — jangan deket-deket!",
+      "voText": "Stiker mengitari kepala. Salman merapatkan selimut!",
       "durationHintSec": 6,
       "delivery": "spoken",
       "cast": [
@@ -165,7 +165,7 @@
     {
       "id": "S06",
       "beatId": "B4",
-      "voText": "Salman memanggil Dream Keeper. Kak Keeper… aku takut gigi rusak.",
+      "voText": "Salman memanggil Dream Keeper. Kak… aku takut gigi rusak.",
       "durationHintSec": 5,
       "delivery": "spoken",
       "cast": [
@@ -193,7 +193,7 @@
     {
       "id": "S07",
       "beatId": "B5",
-      "voText": "Dream Keeper menenangkan. Tiap malam, satu langkah kecil. Kebiasaan itu yang bikin mandiri.",
+      "voText": "Dream Keeper menenangkan. Tiap malam, satu langkah kecil. Itu jalan ke mandiri.",
       "durationHintSec": 8,
       "delivery": "spoken",
       "cast": [
@@ -367,7 +367,7 @@
     {
       "id": "S14",
       "beatId": "B7",
-      "voText": "Salman berdiri tegak. Aku bisa sendiri! Bintang di topi Keeper menyala pelan.",
+      "voText": "Salman berdiri tegak. Aku bisa sendiri! Bintang di topi Keeper menyala.",
       "durationHintSec": 5,
       "delivery": "spoken",
       "cast": [
@@ -396,7 +396,7 @@
     {
       "id": "S15",
       "beatId": "B8",
-      "voText": "Explorer mau tidur masih pegang kue. Salman mengingatkan: kamu juga belum sikat!",
+      "voText": "Explorer mau tidur masih pegang kue. Salman: kamu juga belum sikat!",
       "durationHintSec": 4,
       "delivery": "spoken",
       "cast": [
@@ -425,7 +425,7 @@
     {
       "id": "S16",
       "beatId": "B8",
-      "voText": "Explorer malu, lalu bangkit ambil sikat. Iya, iya… tunggu dulu.",
+      "voText": "Explorer malu, lalu bangkit ambil sikat. Iya, tunggu dulu.",
       "durationHintSec": 3,
       "delivery": "spoken",
       "cast": [
@@ -504,7 +504,7 @@
   "captions": {
     "enabled": true
   },
-  "status": "draft",
+  "status": "preview_ready",
   "approval": null,
   "history": [
     {
@@ -512,6 +512,24 @@
       "to": "draft",
       "at": "2026-11-25T00:00:00.000Z",
       "by": "agent"
+    },
+    {
+      "from": "draft",
+      "to": "vo_ready",
+      "at": "2026-11-25T00:32:16.759Z",
+      "by": "cli:vo"
+    },
+    {
+      "from": "vo_ready",
+      "to": "vo_ready",
+      "at": "2026-11-25T00:34:06.350Z",
+      "by": "cli:vo"
+    },
+    {
+      "from": "vo_ready",
+      "to": "preview_ready",
+      "at": "2026-11-25T00:34:44.728Z",
+      "by": "cli:qa"
     }
   ]
 }

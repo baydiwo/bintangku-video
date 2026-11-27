@@ -9,8 +9,8 @@
     "width": 1080,
     "height": 1920,
     "pacing": "scene",
-    "generatedAt": "2026-11-25T00:28:40.577Z",
-    "generator": "bintangku-cli@2-scene-draft",
+    "generatedAt": "2026-11-25T00:34:26.860Z",
+    "generator": "bintangku-cli@2-scene",
     "rigVersion": "0.1.1",
     "remotionVersion": "4.0.546"
   },
@@ -19,103 +19,103 @@
       "id": "S01",
       "beatId": "B1",
       "from": 0,
-      "durationInFrames": 180
+      "durationInFrames": 138
     },
     {
       "id": "S02",
       "beatId": "B2",
-      "from": 180,
-      "durationInFrames": 105
+      "from": 138,
+      "durationInFrames": 122
     },
     {
       "id": "S03",
       "beatId": "B2",
-      "from": 285,
-      "durationInFrames": 75
+      "from": 260,
+      "durationInFrames": 105
     },
     {
       "id": "S04",
       "beatId": "B3",
-      "from": 360,
-      "durationInFrames": 60
+      "from": 365,
+      "durationInFrames": 110
     },
     {
       "id": "S05",
       "beatId": "B3",
-      "from": 420,
-      "durationInFrames": 180
+      "from": 475,
+      "durationInFrames": 107
     },
     {
       "id": "S06",
       "beatId": "B4",
-      "from": 600,
-      "durationInFrames": 150
+      "from": 582,
+      "durationInFrames": 143
     },
     {
       "id": "S07",
       "beatId": "B5",
-      "from": 750,
-      "durationInFrames": 240
+      "from": 725,
+      "durationInFrames": 158
     },
     {
       "id": "S08",
       "beatId": "B6",
-      "from": 990,
-      "durationInFrames": 60
+      "from": 883,
+      "durationInFrames": 57
     },
     {
       "id": "S09",
       "beatId": "B6",
-      "from": 1050,
-      "durationInFrames": 60
+      "from": 940,
+      "durationInFrames": 52
     },
     {
       "id": "S10",
       "beatId": "B6",
-      "from": 1110,
-      "durationInFrames": 60
+      "from": 992,
+      "durationInFrames": 74
     },
     {
       "id": "S11",
       "beatId": "B6",
-      "from": 1170,
-      "durationInFrames": 60
+      "from": 1066,
+      "durationInFrames": 45
     },
     {
       "id": "S12",
       "beatId": "B6",
-      "from": 1230,
-      "durationInFrames": 60
+      "from": 1111,
+      "durationInFrames": 69
     },
     {
       "id": "S13",
       "beatId": "B6",
-      "from": 1290,
-      "durationInFrames": 60
+      "from": 1180,
+      "durationInFrames": 64
     },
     {
       "id": "S14",
       "beatId": "B7",
-      "from": 1350,
-      "durationInFrames": 150
+      "from": 1244,
+      "durationInFrames": 172
     },
     {
       "id": "S15",
       "beatId": "B8",
-      "from": 1500,
-      "durationInFrames": 120
+      "from": 1416,
+      "durationInFrames": 160
     },
     {
       "id": "S16",
       "beatId": "B8",
-      "from": 1620,
-      "durationInFrames": 90
+      "from": 1576,
+      "durationInFrames": 141
     },
     {
       "id": "S17",
       "beatId": "B9",
-      "from": 1710,
-      "durationInFrames": 90
+      "from": 1717,
+      "durationInFrames": 83
     }
   ],
   "slots": [
@@ -123,103 +123,103 @@
       "index": 0,
       "beatId": "S01@B1",
       "from": 0,
-      "durationInFrames": 180
+      "durationInFrames": 138
     },
     {
       "index": 1,
       "beatId": "S02@B2",
-      "from": 180,
-      "durationInFrames": 105
+      "from": 138,
+      "durationInFrames": 122
     },
     {
       "index": 2,
       "beatId": "S03@B2",
-      "from": 285,
-      "durationInFrames": 75
+      "from": 260,
+      "durationInFrames": 105
     },
     {
       "index": 3,
       "beatId": "S04@B3",
-      "from": 360,
-      "durationInFrames": 60
+      "from": 365,
+      "durationInFrames": 110
     },
     {
       "index": 4,
       "beatId": "S05@B3",
-      "from": 420,
-      "durationInFrames": 180
+      "from": 475,
+      "durationInFrames": 107
     },
     {
       "index": 5,
       "beatId": "S06@B4",
-      "from": 600,
-      "durationInFrames": 150
+      "from": 582,
+      "durationInFrames": 143
     },
     {
       "index": 6,
       "beatId": "S07@B5",
-      "from": 750,
-      "durationInFrames": 240
+      "from": 725,
+      "durationInFrames": 158
     },
     {
       "index": 7,
       "beatId": "S08@B6",
-      "from": 990,
-      "durationInFrames": 60
+      "from": 883,
+      "durationInFrames": 57
     },
     {
       "index": 8,
       "beatId": "S09@B6",
-      "from": 1050,
-      "durationInFrames": 60
+      "from": 940,
+      "durationInFrames": 52
     },
     {
       "index": 9,
       "beatId": "S10@B6",
-      "from": 1110,
-      "durationInFrames": 60
+      "from": 992,
+      "durationInFrames": 74
     },
     {
       "index": 10,
       "beatId": "S11@B6",
-      "from": 1170,
-      "durationInFrames": 60
+      "from": 1066,
+      "durationInFrames": 45
     },
     {
       "index": 11,
       "beatId": "S12@B6",
-      "from": 1230,
-      "durationInFrames": 60
+      "from": 1111,
+      "durationInFrames": 69
     },
     {
       "index": 12,
       "beatId": "S13@B6",
-      "from": 1290,
-      "durationInFrames": 60
+      "from": 1180,
+      "durationInFrames": 64
     },
     {
       "index": 13,
       "beatId": "S14@B7",
-      "from": 1350,
-      "durationInFrames": 150
+      "from": 1244,
+      "durationInFrames": 172
     },
     {
       "index": 14,
       "beatId": "S15@B8",
-      "from": 1500,
-      "durationInFrames": 120
+      "from": 1416,
+      "durationInFrames": 160
     },
     {
       "index": 15,
       "beatId": "S16@B8",
-      "from": 1620,
-      "durationInFrames": 90
+      "from": 1576,
+      "durationInFrames": 141
     },
     {
       "index": 16,
       "beatId": "S17@B9",
-      "from": 1710,
-      "durationInFrames": 90
+      "from": 1717,
+      "durationInFrames": 83
     }
   ],
   "elements": [
@@ -730,56 +730,2183 @@
   ],
   "text": [
     {
+      "kind": "caption",
+      "from": 0,
+      "to": 138,
+      "captions": [
+        {
+          "text": "Malam",
+          "startMs": 100,
+          "endMs": 420,
+          "timestampMs": 260,
+          "confidence": null
+        },
+        {
+          "text": "hari.",
+          "startMs": 500,
+          "endMs": 1220,
+          "timestampMs": 860,
+          "confidence": null
+        },
+        {
+          "text": "Salman",
+          "startMs": 1277,
+          "endMs": 1620,
+          "timestampMs": 1449,
+          "confidence": null
+        },
+        {
+          "text": "di",
+          "startMs": 1647,
+          "endMs": 1700,
+          "timestampMs": 1674,
+          "confidence": null
+        },
+        {
+          "text": "kasur,",
+          "startMs": 1780,
+          "endMs": 2420,
+          "timestampMs": 2100,
+          "confidence": null
+        },
+        {
+          "text": "mengantuk,",
+          "startMs": 2468,
+          "endMs": 3140,
+          "timestampMs": 2804,
+          "confidence": null
+        },
+        {
+          "text": "mau",
+          "startMs": 3200,
+          "endMs": 3380,
+          "timestampMs": 3290,
+          "confidence": null
+        },
+        {
+          "text": "langsung",
+          "startMs": 3420,
+          "endMs": 3700,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": "tidur.",
+          "startMs": 3780,
+          "endMs": 4500,
+          "timestampMs": 4140,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S01"
+    },
+    {
+      "kind": "caption",
+      "from": 138,
+      "to": 260,
+      "captions": [
+        {
+          "text": "Explorer",
+          "startMs": 4700,
+          "endMs": 5180,
+          "timestampMs": 4940,
+          "confidence": null
+        },
+        {
+          "text": "muncul",
+          "startMs": 5220,
+          "endMs": 5660,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": "dengan",
+          "startMs": 5694,
+          "endMs": 5900,
+          "timestampMs": 5797,
+          "confidence": null
+        },
+        {
+          "text": "sikat",
+          "startMs": 5960,
+          "endMs": 6220,
+          "timestampMs": 6090,
+          "confidence": null
+        },
+        {
+          "text": "gigi.",
+          "startMs": 6280,
+          "endMs": 6940,
+          "timestampMs": 6610,
+          "confidence": null
+        },
+        {
+          "text": "Belum",
+          "startMs": 7020,
+          "endMs": 7340,
+          "timestampMs": 7180,
+          "confidence": null
+        },
+        {
+          "text": "sikat,",
+          "startMs": 7400,
+          "endMs": 7740,
+          "timestampMs": 7570,
+          "confidence": null
+        },
+        {
+          "text": "Salman!",
+          "startMs": 7809,
+          "endMs": 8540,
+          "timestampMs": 8175,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S02"
+    },
+    {
+      "kind": "caption",
+      "from": 260,
+      "to": 365,
+      "captions": [
+        {
+          "text": "Salman",
+          "startMs": 8767,
+          "endMs": 9167,
+          "timestampMs": 8967,
+          "confidence": null
+        },
+        {
+          "text": "menguap.",
+          "startMs": 9231,
+          "endMs": 10127,
+          "timestampMs": 9679,
+          "confidence": null
+        },
+        {
+          "text": "Gigi",
+          "startMs": 10207,
+          "endMs": 10527,
+          "timestampMs": 10367,
+          "confidence": null
+        },
+        {
+          "text": "aku",
+          "startMs": 10587,
+          "endMs": 10767,
+          "timestampMs": 10677,
+          "confidence": null
+        },
+        {
+          "text": "masih",
+          "startMs": 10807,
+          "endMs": 11007,
+          "timestampMs": 10907,
+          "confidence": null
+        },
+        {
+          "text": "bersih",
+          "startMs": 11071,
+          "endMs": 11407,
+          "timestampMs": 11239,
+          "confidence": null
+        },
+        {
+          "text": "kok…",
+          "startMs": 11507,
+          "endMs": 12047,
+          "timestampMs": 11777,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S03"
+    },
+    {
+      "kind": "caption",
+      "from": 365,
+      "to": 475,
+      "captions": [
+        {
+          "text": "Ruang",
+          "startMs": 12267,
+          "endMs": 12507,
+          "timestampMs": 12387,
+          "confidence": null
+        },
+        {
+          "text": "jadi",
+          "startMs": 12547,
+          "endMs": 12747,
+          "timestampMs": 12647,
+          "confidence": null
+        },
+        {
+          "text": "khayalan",
+          "startMs": 12774,
+          "endMs": 13147,
+          "timestampMs": 12961,
+          "confidence": null
+        },
+        {
+          "text": "berbintang.",
+          "startMs": 13187,
+          "endMs": 13907,
+          "timestampMs": 13547,
+          "confidence": null
+        },
+        {
+          "text": "Stiker",
+          "startMs": 13947,
+          "endMs": 14267,
+          "timestampMs": 14107,
+          "confidence": null
+        },
+        {
+          "text": "kuman",
+          "startMs": 14307,
+          "endMs": 14507,
+          "timestampMs": 14407,
+          "confidence": null
+        },
+        {
+          "text": "gigi",
+          "startMs": 14567,
+          "endMs": 14827,
+          "timestampMs": 14697,
+          "confidence": null
+        },
+        {
+          "text": "muncul.",
+          "startMs": 14867,
+          "endMs": 15707,
+          "timestampMs": 15287,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S04"
+    },
+    {
+      "kind": "caption",
+      "from": 475,
+      "to": 582,
+      "captions": [
+        {
+          "text": "Stiker",
+          "startMs": 15933,
+          "endMs": 16253,
+          "timestampMs": 16093,
+          "confidence": null
+        },
+        {
+          "text": "mengitari",
+          "startMs": 16285,
+          "endMs": 16733,
+          "timestampMs": 16509,
+          "confidence": null
+        },
+        {
+          "text": "kepala.",
+          "startMs": 16793,
+          "endMs": 17293,
+          "timestampMs": 17043,
+          "confidence": null
+        },
+        {
+          "text": "Salman",
+          "startMs": 17384,
+          "endMs": 17933,
+          "timestampMs": 17659,
+          "confidence": null
+        },
+        {
+          "text": "merapatkan",
+          "startMs": 17973,
+          "endMs": 18493,
+          "timestampMs": 18233,
+          "confidence": null
+        },
+        {
+          "text": "selimut!",
+          "startMs": 18553,
+          "endMs": 19293,
+          "timestampMs": 18923,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S05"
+    },
+    {
+      "kind": "caption",
+      "from": 582,
+      "to": 725,
+      "captions": [
+        {
+          "text": "Salman",
+          "startMs": 19500,
+          "endMs": 19900,
+          "timestampMs": 19700,
+          "confidence": null
+        },
+        {
+          "text": "memanggil",
+          "startMs": 19940,
+          "endMs": 20380,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": "Dream",
+          "startMs": 20420,
+          "endMs": 20620,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": "Keeper.",
+          "startMs": 20700,
+          "endMs": 21660,
+          "timestampMs": 21180,
+          "confidence": null
+        },
+        {
+          "text": "Kak…",
+          "startMs": 21780,
+          "endMs": 22380,
+          "timestampMs": 22080,
+          "confidence": null
+        },
+        {
+          "text": "aku",
+          "startMs": 22440,
+          "endMs": 22620,
+          "timestampMs": 22530,
+          "confidence": null
+        },
+        {
+          "text": "takut",
+          "startMs": 22660,
+          "endMs": 22860,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": "gigi",
+          "startMs": 22920,
+          "endMs": 23180,
+          "timestampMs": 23050,
+          "confidence": null
+        },
+        {
+          "text": "rusak.",
+          "startMs": 23260,
+          "endMs": 24060,
+          "timestampMs": 23660,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S06"
+    },
+    {
+      "kind": "caption",
+      "from": 725,
+      "to": 883,
+      "captions": [
+        {
+          "text": "Dream",
+          "startMs": 24267,
+          "endMs": 24507,
+          "timestampMs": 24387,
+          "confidence": null
+        },
+        {
+          "text": "Keeper",
+          "startMs": 24553,
+          "endMs": 24827,
+          "timestampMs": 24690,
+          "confidence": null
+        },
+        {
+          "text": "menenangkan.",
+          "startMs": 24867,
+          "endMs": 25787,
+          "timestampMs": 25327,
+          "confidence": null
+        },
+        {
+          "text": "Tiap",
+          "startMs": 25894,
+          "endMs": 26187,
+          "timestampMs": 26040,
+          "confidence": null
+        },
+        {
+          "text": "malam,",
+          "startMs": 26247,
+          "endMs": 26667,
+          "timestampMs": 26457,
+          "confidence": null
+        },
+        {
+          "text": "satu",
+          "startMs": 26715,
+          "endMs": 26907,
+          "timestampMs": 26811,
+          "confidence": null
+        },
+        {
+          "text": "langkah",
+          "startMs": 26939,
+          "endMs": 27147,
+          "timestampMs": 27043,
+          "confidence": null
+        },
+        {
+          "text": "kecil.",
+          "startMs": 27200,
+          "endMs": 27627,
+          "timestampMs": 27413,
+          "confidence": null
+        },
+        {
+          "text": "Itu",
+          "startMs": 27760,
+          "endMs": 28107,
+          "timestampMs": 27934,
+          "confidence": null
+        },
+        {
+          "text": "jalan",
+          "startMs": 28187,
+          "endMs": 28427,
+          "timestampMs": 28307,
+          "confidence": null
+        },
+        {
+          "text": "ke",
+          "startMs": 28454,
+          "endMs": 28507,
+          "timestampMs": 28481,
+          "confidence": null
+        },
+        {
+          "text": "mandiri.",
+          "startMs": 28555,
+          "endMs": 29307,
+          "timestampMs": 28931,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S07"
+    },
+    {
       "kind": "onScreen",
-      "from": 990,
-      "to": 1050,
+      "from": 883,
+      "to": 940,
       "content": "Ambil Sikat Dan Pasta",
       "sceneId": "S08"
     },
     {
+      "kind": "caption",
+      "from": 883,
+      "to": 940,
+      "captions": [
+        {
+          "text": "Ambil",
+          "startMs": 29533,
+          "endMs": 29853,
+          "timestampMs": 29693,
+          "confidence": null
+        },
+        {
+          "text": "sikat",
+          "startMs": 29913,
+          "endMs": 30253,
+          "timestampMs": 30083,
+          "confidence": null
+        },
+        {
+          "text": "dan",
+          "startMs": 30293,
+          "endMs": 30413,
+          "timestampMs": 30353,
+          "confidence": null
+        },
+        {
+          "text": "pasta.",
+          "startMs": 30506,
+          "endMs": 31213,
+          "timestampMs": 30860,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S08"
+    },
+    {
       "kind": "onScreen",
-      "from": 1050,
-      "to": 1110,
+      "from": 940,
+      "to": 992,
       "content": "Sikat Depan Pelan-Pelan",
       "sceneId": "S09"
     },
     {
+      "kind": "caption",
+      "from": 940,
+      "to": 992,
+      "captions": [
+        {
+          "text": "Sikat",
+          "startMs": 31433,
+          "endMs": 31753,
+          "timestampMs": 31593,
+          "confidence": null
+        },
+        {
+          "text": "depan",
+          "startMs": 31780,
+          "endMs": 31993,
+          "timestampMs": 31887,
+          "confidence": null
+        },
+        {
+          "text": "pelan-pelan.",
+          "startMs": 32033,
+          "endMs": 32953,
+          "timestampMs": 32493,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S09"
+    },
+    {
       "kind": "onScreen",
-      "from": 1110,
-      "to": 1170,
+      "from": 992,
+      "to": 1066,
       "content": "Sikat Dalam, Atas, Bawah",
       "sceneId": "S10"
     },
     {
+      "kind": "caption",
+      "from": 992,
+      "to": 1066,
+      "captions": [
+        {
+          "text": "Sikat",
+          "startMs": 33167,
+          "endMs": 33487,
+          "timestampMs": 33327,
+          "confidence": null
+        },
+        {
+          "text": "dalam,",
+          "startMs": 33554,
+          "endMs": 33967,
+          "timestampMs": 33761,
+          "confidence": null
+        },
+        {
+          "text": "atas,",
+          "startMs": 34079,
+          "endMs": 34687,
+          "timestampMs": 34383,
+          "confidence": null
+        },
+        {
+          "text": "bawah.",
+          "startMs": 34727,
+          "endMs": 35407,
+          "timestampMs": 35067,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S10"
+    },
+    {
       "kind": "onScreen",
-      "from": 1170,
-      "to": 1230,
+      "from": 1066,
+      "to": 1111,
       "content": "Sikat Lidah Juga Ya",
       "sceneId": "S11"
     },
     {
+      "kind": "caption",
+      "from": 1066,
+      "to": 1111,
+      "captions": [
+        {
+          "text": "Sikat",
+          "startMs": 35633,
+          "endMs": 35953,
+          "timestampMs": 35793,
+          "confidence": null
+        },
+        {
+          "text": "lidah",
+          "startMs": 35993,
+          "endMs": 36193,
+          "timestampMs": 36093,
+          "confidence": null
+        },
+        {
+          "text": "juga",
+          "startMs": 36257,
+          "endMs": 36513,
+          "timestampMs": 36385,
+          "confidence": null
+        },
+        {
+          "text": "ya.",
+          "startMs": 36620,
+          "endMs": 36913,
+          "timestampMs": 36767,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S11"
+    },
+    {
       "kind": "onScreen",
-      "from": 1230,
-      "to": 1290,
+      "from": 1111,
+      "to": 1180,
       "content": "Kumur, Bilas, Selesai",
       "sceneId": "S12"
     },
     {
+      "kind": "caption",
+      "from": 1111,
+      "to": 1180,
+      "captions": [
+        {
+          "text": "Kumur,",
+          "startMs": 37133,
+          "endMs": 37613,
+          "timestampMs": 37373,
+          "confidence": null
+        },
+        {
+          "text": "bilas,",
+          "startMs": 37693,
+          "endMs": 38173,
+          "timestampMs": 37933,
+          "confidence": null
+        },
+        {
+          "text": "selesai.",
+          "startMs": 38226,
+          "endMs": 39213,
+          "timestampMs": 38720,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S12"
+    },
+    {
       "kind": "onScreen",
-      "from": 1290,
-      "to": 1350,
+      "from": 1180,
+      "to": 1244,
       "content": "Gigi Bersih, Siap Mimpi",
       "sceneId": "S13"
     },
     {
+      "kind": "caption",
+      "from": 1180,
+      "to": 1244,
+      "captions": [
+        {
+          "text": "Gigi",
+          "startMs": 39433,
+          "endMs": 39673,
+          "timestampMs": 39553,
+          "confidence": null
+        },
+        {
+          "text": "bersih,",
+          "startMs": 39737,
+          "endMs": 40313,
+          "timestampMs": 40025,
+          "confidence": null
+        },
+        {
+          "text": "siap",
+          "startMs": 40366,
+          "endMs": 40633,
+          "timestampMs": 40500,
+          "confidence": null
+        },
+        {
+          "text": "mimpi.",
+          "startMs": 40673,
+          "endMs": 41353,
+          "timestampMs": 41013,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S13"
+    },
+    {
+      "kind": "caption",
+      "from": 1244,
+      "to": 1416,
+      "captions": [
+        {
+          "text": "Salman",
+          "startMs": 41567,
+          "endMs": 42047,
+          "timestampMs": 41807,
+          "confidence": null
+        },
+        {
+          "text": "berdiri",
+          "startMs": 42087,
+          "endMs": 42367,
+          "timestampMs": 42227,
+          "confidence": null
+        },
+        {
+          "text": "tegak.",
+          "startMs": 42427,
+          "endMs": 42847,
+          "timestampMs": 42637,
+          "confidence": null
+        },
+        {
+          "text": "Aku",
+          "startMs": 42967,
+          "endMs": 43247,
+          "timestampMs": 43107,
+          "confidence": null
+        },
+        {
+          "text": "bisa",
+          "startMs": 43311,
+          "endMs": 43567,
+          "timestampMs": 43439,
+          "confidence": null
+        },
+        {
+          "text": "sendiri!",
+          "startMs": 43615,
+          "endMs": 44447,
+          "timestampMs": 44031,
+          "confidence": null
+        },
+        {
+          "text": "Bintang",
+          "startMs": 44807,
+          "endMs": 45487,
+          "timestampMs": 45147,
+          "confidence": null
+        },
+        {
+          "text": "di",
+          "startMs": 45514,
+          "endMs": 45567,
+          "timestampMs": 45541,
+          "confidence": null
+        },
+        {
+          "text": "topi",
+          "startMs": 45627,
+          "endMs": 46007,
+          "timestampMs": 45817,
+          "confidence": null
+        },
+        {
+          "text": "Keeper",
+          "startMs": 46036,
+          "endMs": 46207,
+          "timestampMs": 46122,
+          "confidence": null
+        },
+        {
+          "text": "menyala.",
+          "startMs": 46255,
+          "endMs": 47087,
+          "timestampMs": 46671,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S14"
+    },
+    {
+      "kind": "caption",
+      "from": 1416,
+      "to": 1576,
+      "captions": [
+        {
+          "text": "Explorer",
+          "startMs": 47300,
+          "endMs": 47860,
+          "timestampMs": 47580,
+          "confidence": null
+        },
+        {
+          "text": "mau",
+          "startMs": 47900,
+          "endMs": 48020,
+          "timestampMs": 47960,
+          "confidence": null
+        },
+        {
+          "text": "tidur",
+          "startMs": 48100,
+          "endMs": 48500,
+          "timestampMs": 48300,
+          "confidence": null
+        },
+        {
+          "text": "masih",
+          "startMs": 48567,
+          "endMs": 48900,
+          "timestampMs": 48734,
+          "confidence": null
+        },
+        {
+          "text": "pegang",
+          "startMs": 48940,
+          "endMs": 49140,
+          "timestampMs": 49040,
+          "confidence": null
+        },
+        {
+          "text": "kue.",
+          "startMs": 49220,
+          "endMs": 49940,
+          "timestampMs": 49580,
+          "confidence": null
+        },
+        {
+          "text": "Salman:",
+          "startMs": 50054,
+          "endMs": 50820,
+          "timestampMs": 50437,
+          "confidence": null
+        },
+        {
+          "text": "kamu",
+          "startMs": 50836,
+          "endMs": 50900,
+          "timestampMs": 50868,
+          "confidence": null
+        },
+        {
+          "text": "juga",
+          "startMs": 50948,
+          "endMs": 51140,
+          "timestampMs": 51044,
+          "confidence": null
+        },
+        {
+          "text": "belum",
+          "startMs": 51180,
+          "endMs": 51380,
+          "timestampMs": 51280,
+          "confidence": null
+        },
+        {
+          "text": "sikat!",
+          "startMs": 51480,
+          "endMs": 52420,
+          "timestampMs": 51950,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S15"
+    },
+    {
+      "kind": "caption",
+      "from": 1576,
+      "to": 1717,
+      "captions": [
+        {
+          "text": "Explorer",
+          "startMs": 52633,
+          "endMs": 53113,
+          "timestampMs": 52873,
+          "confidence": null
+        },
+        {
+          "text": "malu,",
+          "startMs": 53193,
+          "endMs": 53593,
+          "timestampMs": 53393,
+          "confidence": null
+        },
+        {
+          "text": "lalu",
+          "startMs": 53633,
+          "endMs": 53913,
+          "timestampMs": 53773,
+          "confidence": null
+        },
+        {
+          "text": "bangkit",
+          "startMs": 53961,
+          "endMs": 54313,
+          "timestampMs": 54137,
+          "confidence": null
+        },
+        {
+          "text": "ambil",
+          "startMs": 54393,
+          "endMs": 54793,
+          "timestampMs": 54593,
+          "confidence": null
+        },
+        {
+          "text": "sikat.",
+          "startMs": 54873,
+          "endMs": 55513,
+          "timestampMs": 55193,
+          "confidence": null
+        },
+        {
+          "text": "Iya,",
+          "startMs": 55753,
+          "endMs": 56153,
+          "timestampMs": 55953,
+          "confidence": null
+        },
+        {
+          "text": "tunggu",
+          "startMs": 56201,
+          "endMs": 56473,
+          "timestampMs": 56337,
+          "confidence": null
+        },
+        {
+          "text": "dulu.",
+          "startMs": 56513,
+          "endMs": 57113,
+          "timestampMs": 56813,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S16"
+    },
+    {
       "kind": "onScreen",
-      "from": 1710,
+      "from": 1717,
       "to": 1800,
       "content": "Langkah Kecil Menuju Anak Mandiri",
       "sceneId": "S17"
+    },
+    {
+      "kind": "caption",
+      "from": 1717,
+      "to": 1800,
+      "captions": [
+        {
+          "text": "Langkah",
+          "startMs": 57333,
+          "endMs": 57573,
+          "timestampMs": 57453,
+          "confidence": null
+        },
+        {
+          "text": "kecil",
+          "startMs": 57626,
+          "endMs": 58053,
+          "timestampMs": 57839,
+          "confidence": null
+        },
+        {
+          "text": "menuju",
+          "startMs": 58117,
+          "endMs": 58533,
+          "timestampMs": 58325,
+          "confidence": null
+        },
+        {
+          "text": "anak",
+          "startMs": 58629,
+          "endMs": 59013,
+          "timestampMs": 58821,
+          "confidence": null
+        },
+        {
+          "text": "mandiri.",
+          "startMs": 59061,
+          "endMs": 59813,
+          "timestampMs": 59437,
+          "confidence": null
+        }
+      ],
+      "sceneId": "S17"
     }
   ],
-  "audio": [],
-  "mouthTracks": [],
-  "approvalHash": "43d15bdf00e48f94c79d5f193ccc08d8adc71dad599be1afdeb126a18000dc35"
+  "audio": [
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S01.mp3",
+      "from": 3,
+      "durationInFrames": 132,
+      "volume": 1,
+      "sceneId": "S01"
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S02.mp3",
+      "from": 141,
+      "durationInFrames": 116,
+      "volume": 1,
+      "sceneId": "S02"
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S03.mp3",
+      "from": 263,
+      "durationInFrames": 99,
+      "volume": 1,
+      "sceneId": "S03"
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S04.mp3",
+      "from": 368,
+      "durationInFrames": 104,
+      "volume": 1,
+      "sceneId": "S04"
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S05.mp3",
+      "from": 478,
+      "durationInFrames": 101,
+      "volume": 1,
+      "sceneId": "S05"
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S06.mp3",
+      "from": 585,
+      "durationInFrames": 137,
+      "volume": 1,
+      "sceneId": "S06"
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S07.mp3",
+      "from": 728,
+      "durationInFrames": 152,
+      "volume": 1,
+      "sceneId": "S07"
+    },
+    {
+      "kind": "vo-sung",
+      "src": "voiceover/20261125-sikat-gigi-malam/S08.mp3",
+      "from": 886,
+      "durationInFrames": 51,
+      "volume": 1,
+      "sceneId": "S08"
+    },
+    {
+      "kind": "vo-sung",
+      "src": "voiceover/20261125-sikat-gigi-malam/S09.mp3",
+      "from": 943,
+      "durationInFrames": 46,
+      "volume": 1,
+      "sceneId": "S09"
+    },
+    {
+      "kind": "vo-sung",
+      "src": "voiceover/20261125-sikat-gigi-malam/S10.mp3",
+      "from": 995,
+      "durationInFrames": 68,
+      "volume": 1,
+      "sceneId": "S10"
+    },
+    {
+      "kind": "vo-sung",
+      "src": "voiceover/20261125-sikat-gigi-malam/S11.mp3",
+      "from": 1069,
+      "durationInFrames": 39,
+      "volume": 1,
+      "sceneId": "S11"
+    },
+    {
+      "kind": "vo-sung",
+      "src": "voiceover/20261125-sikat-gigi-malam/S12.mp3",
+      "from": 1114,
+      "durationInFrames": 63,
+      "volume": 1,
+      "sceneId": "S12"
+    },
+    {
+      "kind": "vo-sung",
+      "src": "voiceover/20261125-sikat-gigi-malam/S13.mp3",
+      "from": 1183,
+      "durationInFrames": 58,
+      "volume": 1,
+      "sceneId": "S13"
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S14.mp3",
+      "from": 1247,
+      "durationInFrames": 166,
+      "volume": 1,
+      "sceneId": "S14"
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S15.mp3",
+      "from": 1419,
+      "durationInFrames": 154,
+      "volume": 1,
+      "sceneId": "S15"
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S16.mp3",
+      "from": 1579,
+      "durationInFrames": 135,
+      "volume": 1,
+      "sceneId": "S16"
+    },
+    {
+      "kind": "vo",
+      "src": "voiceover/20261125-sikat-gigi-malam/S17.mp3",
+      "from": 1720,
+      "durationInFrames": 75,
+      "volume": 1,
+      "sceneId": "S17"
+    }
+  ],
+  "mouthTracks": [
+    {
+      "sceneId": "S01",
+      "beatId": "B1",
+      "frames": [
+        {
+          "frame": 3,
+          "shape": "open"
+        },
+        {
+          "frame": 13,
+          "shape": "closed"
+        },
+        {
+          "frame": 15,
+          "shape": "open"
+        },
+        {
+          "frame": 37,
+          "shape": "closed"
+        },
+        {
+          "frame": 38,
+          "shape": "open"
+        },
+        {
+          "frame": 51,
+          "shape": "closed"
+        },
+        {
+          "frame": 53,
+          "shape": "open"
+        },
+        {
+          "frame": 60,
+          "shape": "round"
+        },
+        {
+          "frame": 65,
+          "shape": "open"
+        },
+        {
+          "frame": 73,
+          "shape": "closed"
+        },
+        {
+          "frame": 74,
+          "shape": "open"
+        },
+        {
+          "frame": 87,
+          "shape": "round"
+        },
+        {
+          "frame": 90,
+          "shape": "open"
+        },
+        {
+          "frame": 95,
+          "shape": "closed"
+        },
+        {
+          "frame": 96,
+          "shape": "open"
+        },
+        {
+          "frame": 99,
+          "shape": "round"
+        },
+        {
+          "frame": 102,
+          "shape": "open"
+        },
+        {
+          "frame": 108,
+          "shape": "round"
+        },
+        {
+          "frame": 110,
+          "shape": "open"
+        },
+        {
+          "frame": 111,
+          "shape": "closed"
+        },
+        {
+          "frame": 113,
+          "shape": "open"
+        },
+        {
+          "frame": 120,
+          "shape": "round"
+        },
+        {
+          "frame": 123,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S02",
+      "beatId": "B2",
+      "frames": [
+        {
+          "frame": 141,
+          "shape": "open"
+        },
+        {
+          "frame": 148,
+          "shape": "round"
+        },
+        {
+          "frame": 150,
+          "shape": "open"
+        },
+        {
+          "frame": 157,
+          "shape": "round"
+        },
+        {
+          "frame": 161,
+          "shape": "open"
+        },
+        {
+          "frame": 165,
+          "shape": "round"
+        },
+        {
+          "frame": 168,
+          "shape": "open"
+        },
+        {
+          "frame": 177,
+          "shape": "closed"
+        },
+        {
+          "frame": 178,
+          "shape": "open"
+        },
+        {
+          "frame": 187,
+          "shape": "closed"
+        },
+        {
+          "frame": 188,
+          "shape": "open"
+        },
+        {
+          "frame": 209,
+          "shape": "closed"
+        },
+        {
+          "frame": 210,
+          "shape": "open"
+        },
+        {
+          "frame": 217,
+          "shape": "round"
+        },
+        {
+          "frame": 219,
+          "shape": "open"
+        },
+        {
+          "frame": 221,
+          "shape": "closed"
+        },
+        {
+          "frame": 222,
+          "shape": "open"
+        },
+        {
+          "frame": 233,
+          "shape": "closed"
+        },
+        {
+          "frame": 234,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S03",
+      "beatId": "B2",
+      "frames": [
+        {
+          "frame": 263,
+          "shape": "open"
+        },
+        {
+          "frame": 275,
+          "shape": "closed"
+        },
+        {
+          "frame": 276,
+          "shape": "open"
+        },
+        {
+          "frame": 284,
+          "shape": "round"
+        },
+        {
+          "frame": 290,
+          "shape": "open"
+        },
+        {
+          "frame": 304,
+          "shape": "closed"
+        },
+        {
+          "frame": 306,
+          "shape": "open"
+        },
+        {
+          "frame": 316,
+          "shape": "closed"
+        },
+        {
+          "frame": 317,
+          "shape": "open"
+        },
+        {
+          "frame": 321,
+          "shape": "round"
+        },
+        {
+          "frame": 323,
+          "shape": "closed"
+        },
+        {
+          "frame": 324,
+          "shape": "open"
+        },
+        {
+          "frame": 331,
+          "shape": "closed"
+        },
+        {
+          "frame": 332,
+          "shape": "open"
+        },
+        {
+          "frame": 343,
+          "shape": "closed"
+        },
+        {
+          "frame": 345,
+          "shape": "open"
+        },
+        {
+          "frame": 348,
+          "shape": "round"
+        },
+        {
+          "frame": 352,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S04",
+      "beatId": "B3",
+      "frames": [
+        {
+          "frame": 368,
+          "shape": "open"
+        },
+        {
+          "frame": 370,
+          "shape": "round"
+        },
+        {
+          "frame": 372,
+          "shape": "open"
+        },
+        {
+          "frame": 428,
+          "shape": "closed"
+        },
+        {
+          "frame": 429,
+          "shape": "open"
+        },
+        {
+          "frame": 430,
+          "shape": "round"
+        },
+        {
+          "frame": 432,
+          "shape": "open"
+        },
+        {
+          "frame": 436,
+          "shape": "closed"
+        },
+        {
+          "frame": 437,
+          "shape": "open"
+        },
+        {
+          "frame": 445,
+          "shape": "closed"
+        },
+        {
+          "frame": 446,
+          "shape": "open"
+        },
+        {
+          "frame": 447,
+          "shape": "round"
+        },
+        {
+          "frame": 450,
+          "shape": "open"
+        },
+        {
+          "frame": 454,
+          "shape": "round"
+        },
+        {
+          "frame": 458,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S05",
+      "beatId": "B3",
+      "frames": [
+        {
+          "frame": 478,
+          "shape": "open"
+        },
+        {
+          "frame": 502,
+          "shape": "closed"
+        },
+        {
+          "frame": 503,
+          "shape": "open"
+        },
+        {
+          "frame": 519,
+          "shape": "closed"
+        },
+        {
+          "frame": 521,
+          "shape": "open"
+        },
+        {
+          "frame": 538,
+          "shape": "closed"
+        },
+        {
+          "frame": 539,
+          "shape": "open"
+        },
+        {
+          "frame": 555,
+          "shape": "closed"
+        },
+        {
+          "frame": 556,
+          "shape": "open"
+        },
+        {
+          "frame": 566,
+          "shape": "round"
+        },
+        {
+          "frame": 570,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S06",
+      "beatId": "B4",
+      "frames": [
+        {
+          "frame": 585,
+          "shape": "open"
+        },
+        {
+          "frame": 597,
+          "shape": "closed"
+        },
+        {
+          "frame": 598,
+          "shape": "open"
+        },
+        {
+          "frame": 619,
+          "shape": "closed"
+        },
+        {
+          "frame": 621,
+          "shape": "open"
+        },
+        {
+          "frame": 650,
+          "shape": "closed"
+        },
+        {
+          "frame": 653,
+          "shape": "open"
+        },
+        {
+          "frame": 672,
+          "shape": "closed"
+        },
+        {
+          "frame": 673,
+          "shape": "open"
+        },
+        {
+          "frame": 676,
+          "shape": "round"
+        },
+        {
+          "frame": 679,
+          "shape": "open"
+        },
+        {
+          "frame": 683,
+          "shape": "round"
+        },
+        {
+          "frame": 685,
+          "shape": "open"
+        },
+        {
+          "frame": 686,
+          "shape": "closed"
+        },
+        {
+          "frame": 687,
+          "shape": "open"
+        },
+        {
+          "frame": 696,
+          "shape": "closed"
+        },
+        {
+          "frame": 697,
+          "shape": "open"
+        },
+        {
+          "frame": 700,
+          "shape": "round"
+        },
+        {
+          "frame": 703,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S07",
+      "beatId": "B5",
+      "frames": [
+        {
+          "frame": 728,
+          "shape": "open"
+        },
+        {
+          "frame": 745,
+          "shape": "closed"
+        },
+        {
+          "frame": 746,
+          "shape": "open"
+        },
+        {
+          "frame": 774,
+          "shape": "closed"
+        },
+        {
+          "frame": 776,
+          "shape": "open"
+        },
+        {
+          "frame": 786,
+          "shape": "closed"
+        },
+        {
+          "frame": 787,
+          "shape": "open"
+        },
+        {
+          "frame": 800,
+          "shape": "closed"
+        },
+        {
+          "frame": 801,
+          "shape": "open"
+        },
+        {
+          "frame": 805,
+          "shape": "round"
+        },
+        {
+          "frame": 808,
+          "shape": "open"
+        },
+        {
+          "frame": 829,
+          "shape": "closed"
+        },
+        {
+          "frame": 832,
+          "shape": "open"
+        },
+        {
+          "frame": 840,
+          "shape": "round"
+        },
+        {
+          "frame": 844,
+          "shape": "closed"
+        },
+        {
+          "frame": 845,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S08",
+      "beatId": "B6",
+      "frames": [
+        {
+          "frame": 886,
+          "shape": "open"
+        },
+        {
+          "frame": 896,
+          "shape": "closed"
+        },
+        {
+          "frame": 897,
+          "shape": "open"
+        },
+        {
+          "frame": 913,
+          "shape": "closed"
+        },
+        {
+          "frame": 915,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S09",
+      "beatId": "B6",
+      "frames": [
+        {
+          "frame": 943,
+          "shape": "open"
+        },
+        {
+          "frame": 960,
+          "shape": "closed"
+        },
+        {
+          "frame": 961,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S10",
+      "beatId": "B6",
+      "frames": [
+        {
+          "frame": 995,
+          "shape": "open"
+        },
+        {
+          "frame": 1005,
+          "shape": "closed"
+        },
+        {
+          "frame": 1006,
+          "shape": "open"
+        },
+        {
+          "frame": 1019,
+          "shape": "closed"
+        },
+        {
+          "frame": 1022,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S11",
+      "beatId": "B6",
+      "frames": [
+        {
+          "frame": 1069,
+          "shape": "open"
+        },
+        {
+          "frame": 1086,
+          "shape": "closed"
+        },
+        {
+          "frame": 1087,
+          "shape": "open"
+        },
+        {
+          "frame": 1089,
+          "shape": "round"
+        },
+        {
+          "frame": 1092,
+          "shape": "open"
+        },
+        {
+          "frame": 1096,
+          "shape": "closed"
+        },
+        {
+          "frame": 1098,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S12",
+      "beatId": "B6",
+      "frames": [
+        {
+          "frame": 1114,
+          "shape": "open"
+        },
+        {
+          "frame": 1116,
+          "shape": "round"
+        },
+        {
+          "frame": 1119,
+          "shape": "open"
+        },
+        {
+          "frame": 1121,
+          "shape": "round"
+        },
+        {
+          "frame": 1124,
+          "shape": "open"
+        },
+        {
+          "frame": 1129,
+          "shape": "closed"
+        },
+        {
+          "frame": 1130,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S13",
+      "beatId": "B6",
+      "frames": [
+        {
+          "frame": 1183,
+          "shape": "open"
+        },
+        {
+          "frame": 1191,
+          "shape": "closed"
+        },
+        {
+          "frame": 1192,
+          "shape": "open"
+        },
+        {
+          "frame": 1219,
+          "shape": "closed"
+        },
+        {
+          "frame": 1220,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S14",
+      "beatId": "B7",
+      "frames": [
+        {
+          "frame": 1247,
+          "shape": "open"
+        },
+        {
+          "frame": 1271,
+          "shape": "closed"
+        },
+        {
+          "frame": 1272,
+          "shape": "open"
+        },
+        {
+          "frame": 1286,
+          "shape": "closed"
+        },
+        {
+          "frame": 1289,
+          "shape": "open"
+        },
+        {
+          "frame": 1295,
+          "shape": "round"
+        },
+        {
+          "frame": 1298,
+          "shape": "closed"
+        },
+        {
+          "frame": 1299,
+          "shape": "open"
+        },
+        {
+          "frame": 1307,
+          "shape": "closed"
+        },
+        {
+          "frame": 1308,
+          "shape": "open"
+        },
+        {
+          "frame": 1334,
+          "shape": "closed"
+        },
+        {
+          "frame": 1344,
+          "shape": "open"
+        },
+        {
+          "frame": 1367,
+          "shape": "closed"
+        },
+        {
+          "frame": 1368,
+          "shape": "open"
+        },
+        {
+          "frame": 1370,
+          "shape": "round"
+        },
+        {
+          "frame": 1373,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S15",
+      "beatId": "B8",
+      "frames": [
+        {
+          "frame": 1419,
+          "shape": "open"
+        },
+        {
+          "frame": 1427,
+          "shape": "round"
+        },
+        {
+          "frame": 1430,
+          "shape": "open"
+        },
+        {
+          "frame": 1436,
+          "shape": "closed"
+        },
+        {
+          "frame": 1437,
+          "shape": "open"
+        },
+        {
+          "frame": 1439,
+          "shape": "round"
+        },
+        {
+          "frame": 1441,
+          "shape": "closed"
+        },
+        {
+          "frame": 1443,
+          "shape": "open"
+        },
+        {
+          "frame": 1450,
+          "shape": "round"
+        },
+        {
+          "frame": 1453,
+          "shape": "open"
+        },
+        {
+          "frame": 1455,
+          "shape": "closed"
+        },
+        {
+          "frame": 1457,
+          "shape": "open"
+        },
+        {
+          "frame": 1467,
+          "shape": "closed"
+        },
+        {
+          "frame": 1468,
+          "shape": "open"
+        },
+        {
+          "frame": 1475,
+          "shape": "closed"
+        },
+        {
+          "frame": 1476,
+          "shape": "open"
+        },
+        {
+          "frame": 1479,
+          "shape": "round"
+        },
+        {
+          "frame": 1484,
+          "shape": "open"
+        },
+        {
+          "frame": 1499,
+          "shape": "closed"
+        },
+        {
+          "frame": 1501,
+          "shape": "open"
+        },
+        {
+          "frame": 1526,
+          "shape": "round"
+        },
+        {
+          "frame": 1527,
+          "shape": "closed"
+        },
+        {
+          "frame": 1528,
+          "shape": "open"
+        },
+        {
+          "frame": 1529,
+          "shape": "round"
+        },
+        {
+          "frame": 1532,
+          "shape": "open"
+        },
+        {
+          "frame": 1539,
+          "shape": "round"
+        },
+        {
+          "frame": 1541,
+          "shape": "open"
+        },
+        {
+          "frame": 1542,
+          "shape": "closed"
+        },
+        {
+          "frame": 1544,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S16",
+      "beatId": "B8",
+      "frames": [
+        {
+          "frame": 1579,
+          "shape": "open"
+        },
+        {
+          "frame": 1586,
+          "shape": "round"
+        },
+        {
+          "frame": 1588,
+          "shape": "open"
+        },
+        {
+          "frame": 1594,
+          "shape": "closed"
+        },
+        {
+          "frame": 1595,
+          "shape": "open"
+        },
+        {
+          "frame": 1603,
+          "shape": "round"
+        },
+        {
+          "frame": 1606,
+          "shape": "open"
+        },
+        {
+          "frame": 1608,
+          "shape": "closed"
+        },
+        {
+          "frame": 1609,
+          "shape": "open"
+        },
+        {
+          "frame": 1615,
+          "shape": "round"
+        },
+        {
+          "frame": 1618,
+          "shape": "open"
+        },
+        {
+          "frame": 1630,
+          "shape": "closed"
+        },
+        {
+          "frame": 1631,
+          "shape": "open"
+        },
+        {
+          "frame": 1644,
+          "shape": "closed"
+        },
+        {
+          "frame": 1646,
+          "shape": "open"
+        },
+        {
+          "frame": 1666,
+          "shape": "closed"
+        },
+        {
+          "frame": 1672,
+          "shape": "open"
+        },
+        {
+          "frame": 1685,
+          "shape": "closed"
+        },
+        {
+          "frame": 1686,
+          "shape": "open"
+        },
+        {
+          "frame": 1687,
+          "shape": "round"
+        },
+        {
+          "frame": 1689,
+          "shape": "open"
+        },
+        {
+          "frame": 1693,
+          "shape": "round"
+        },
+        {
+          "frame": 1695,
+          "shape": "open"
+        },
+        {
+          "frame": 1696,
+          "shape": "round"
+        },
+        {
+          "frame": 1699,
+          "shape": "open"
+        },
+        {
+          "frame": 1701,
+          "shape": "round"
+        },
+        {
+          "frame": 1704,
+          "shape": "open"
+        }
+      ]
+    },
+    {
+      "sceneId": "S17",
+      "beatId": "B9",
+      "frames": [
+        {
+          "frame": 1720,
+          "shape": "open"
+        },
+        {
+          "frame": 1742,
+          "shape": "closed"
+        },
+        {
+          "frame": 1743,
+          "shape": "open"
+        },
+        {
+          "frame": 1749,
+          "shape": "round"
+        },
+        {
+          "frame": 1752,
+          "shape": "open"
+        },
+        {
+          "frame": 1753,
+          "shape": "round"
+        },
+        {
+          "frame": 1756,
+          "shape": "closed"
+        },
+        {
+          "frame": 1758,
+          "shape": "open"
+        }
+      ]
+    }
+  ],
+  "approvalHash": "0878f8d1f030f66b1c684bac10321596995109cc6339b599fb49b79f34890010"
 }

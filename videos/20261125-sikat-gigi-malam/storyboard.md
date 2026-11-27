@@ -53,5 +53,6 @@
 
 ## Catatan review
 
-- Status `storyboard_draft` — menunggu approval user sebelum `vo` / `gen`.
+- Approved BrainBox 2026-11-25 → VO narator generated; timeline scene-first 1800f.
+- Beberapa baris VO diperketat agar muat 60 dtk (VO≈56s + pad).
 - Maskot tidak bicara; mulut idle/smile saja.

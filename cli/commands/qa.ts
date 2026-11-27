@@ -26,34 +26,66 @@ export async function cmdQa(
   }
 
   const checks: Array<{ id: string; ok: boolean; detail: string }> = [];
+  const pacing =
+    timeline.meta.pacing ??
+    video.pacing ??
+    (timeline.scenes?.length || video.scenes?.length ? "scene" : "grid");
 
-  const gridOk = timeline.slots.every(
-    (s) => s.from % SLOT_FRAMES === 0 && s.durationInFrames === SLOT_FRAMES,
-  );
-  checks.push({
-    id: "grid",
-    ok: gridOk,
-    detail: gridOk ? "all cuts on 81-frame boundaries" : "misaligned slots",
-  });
+  if (pacing === "scene") {
+    const target = video.targetDuration === 30 ? 900 : 1800;
+    const durOk = timeline.meta.durationInFrames === target;
+    checks.push({
+      id: "duration_frames",
+      ok: durOk,
+      detail: `${timeline.meta.durationInFrames}f (target ${target})`,
+    });
 
-  const slots = timeline.meta.totalSlots;
-  const slotsOk = slots >= MIN_SLOTS && slots <= MAX_SLOTS;
-  checks.push({
-    id: "duration_slots",
-    ok: slotsOk,
-    detail: `${slots} slots (valid ${MIN_SLOTS}–${MAX_SLOTS})`,
-  });
+    const sceneCount = timeline.scenes?.length ?? 0;
+    checks.push({
+      id: "scenes",
+      ok: sceneCount > 0,
+      detail: `${sceneCount} scenes`,
+    });
+
+    const voCount = timeline.audio.filter(
+      (a) =>
+        (a as { kind?: string }).kind === "vo" ||
+        (a as { kind?: string }).kind === "vo-sung",
+    ).length;
+    checks.push({
+      id: "vo_tracks",
+      ok: voCount > 0,
+      detail: `${voCount} VO tracks`,
+    });
+  } else {
+    const gridOk = timeline.slots.every(
+      (s) => s.from % SLOT_FRAMES === 0 && s.durationInFrames === SLOT_FRAMES,
+    );
+    checks.push({
+      id: "grid",
+      ok: gridOk,
+      detail: gridOk ? "all cuts on 81-frame boundaries" : "misaligned slots",
+    });
+
+    const slots = timeline.meta.totalSlots;
+    const slotsOk = slots >= MIN_SLOTS && slots <= MAX_SLOTS;
+    checks.push({
+      id: "duration_slots",
+      ok: slotsOk,
+      detail: `${slots} slots (valid ${MIN_SLOTS}–${MAX_SLOTS})`,
+    });
+
+    checks.push({
+      id: "vo_tracks",
+      ok: timeline.audio.some((a) => (a as { kind?: string }).kind === "vo"),
+      detail: "VO audio tracks present",
+    });
+  }
 
   checks.push({
     id: "hash",
     ok: Boolean(timeline.approvalHash && timeline.approvalHash.length === 64),
     detail: "approvalHash present",
-  });
-
-  checks.push({
-    id: "vo_tracks",
-    ok: timeline.audio.some((a) => (a as { kind?: string }).kind === "vo"),
-    detail: "VO audio tracks present",
   });
 
   if (opts.moderate) {

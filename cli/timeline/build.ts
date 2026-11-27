@@ -88,13 +88,26 @@ function buildSceneTimeline(
   const fps = render.fps ?? FPS;
   const totalTarget = targetFrames(video);
 
-  // Precompute per-scene content frames; draft scales to exact target (no pad bloat)
-  const rawFrames = scenes.map((scene) => {
+  // Precompute per-scene frames. Draft: scale hints to target.
+  // VO: keep full audio; shrink pads if VO+pad overflows 900/1800 (DEC-57).
+  const voFrames = scenes.map((scene) => {
     const durationSec = resolveSceneDurationSec(video, scene, manifest, opts);
+    return Math.max(1, Math.ceil(durationSec * fps));
+  });
+  const voTotal = voFrames.reduce((a, b) => a + b, 0);
+  let padPerScene = opts.requireVo ? padStart + padEnd : 0;
+  if (opts.requireVo && voTotal + scenes.length * padPerScene > totalTarget) {
+    const padBudget = Math.max(0, totalTarget - voTotal);
+    padPerScene = Math.floor(padBudget / scenes.length);
+    warnings.push(
+      `WARN-PAD-COMPRESSED: pad per scene → ${padPerScene}f to fit ${totalTarget}f`,
+    );
+  }
+  const rawFrames = scenes.map((_, i) => {
     if (!opts.requireVo) {
-      return Math.max(1, Math.round(durationSec * fps));
+      return voFrames[i]!;
     }
-    return Math.max(1, Math.ceil(durationSec * fps) + padStart + padEnd);
+    return voFrames[i]! + padPerScene;
   });
   let frameBudget = rawFrames.reduce((a, b) => a + b, 0);
   const scaledFrames = [...rawFrames];
@@ -109,6 +122,11 @@ function buildSceneTimeline(
         assigned += scaledFrames[i]!;
       }
     }
+    frameBudget = totalTarget;
+  } else if (opts.requireVo && frameBudget < totalTarget) {
+    // leftover → last scene (end card)
+    const last = scaledFrames.length - 1;
+    scaledFrames[last] = (scaledFrames[last] ?? 0) + (totalTarget - frameBudget);
     frameBudget = totalTarget;
   }
 
@@ -191,10 +209,11 @@ function buildSceneTimeline(
         throw new CliError("ERR-VO-MISSING", `Missing ${mp3}`);
       }
       voHashes.push(sha256File(mp3));
+      const audioPadStart = Math.min(padStart, Math.floor(padPerScene / 2));
       audio.push({
         kind: scene.delivery === "sung" ? "vo-sung" : "vo",
         src: `voiceover/${video.id}/${scene.id}.mp3`,
-        from: sceneStart + padStart,
+        from: sceneStart + audioPadStart,
         durationInFrames: Math.ceil(durationSec * fps),
         volume: 1,
         sceneId: scene.id,
@@ -203,7 +222,7 @@ function buildSceneTimeline(
       const alignment = loadSceneAlignment(video.id, scene.id);
       const envelope = loadSceneEnvelope(video.id, scene.id);
       const captionOffsetMs = Math.round(
-        ((sceneStart + padStart) / fps) * 1000,
+        ((sceneStart + audioPadStart) / fps) * 1000,
       );
       const { captions, source } = alignmentToCaptions(
         scene.voText,
@@ -232,7 +251,7 @@ function buildSceneTimeline(
           envelope,
           alignment,
           lipsync,
-          absoluteStartFrame: sceneStart + padStart,
+          absoluteStartFrame: sceneStart + audioPadStart,
         }),
       });
     } else {

@@ -1,0 +1,27 @@
+{
+  "videoId": "20261125-sikat-gigi-malam",
+  "at": "2026-11-25T00:34:44.726Z",
+  "checks": [
+    {
+      "id": "duration_frames",
+      "ok": true,
+      "detail": "1800f (target 1800)"
+    },
+    {
+      "id": "scenes",
+      "ok": true,
+      "detail": "17 scenes"
+    },
+    {
+      "id": "vo_tracks",
+      "ok": true,
+      "detail": "17 VO tracks"
+    },
+    {
+      "id": "hash",
+      "ok": true,
+      "detail": "approvalHash present"
+    }
+  ],
+  "passed": true
+}
